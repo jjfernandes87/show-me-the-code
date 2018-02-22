@@ -19,6 +19,10 @@
 		86AAE0B7203E420300B11662 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AAE0B6203E420300B11662 /* DetailPresenter.swift */; };
 		86AAE0B9203E420D00B11662 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AAE0B8203E420D00B11662 /* Car.swift */; };
 		86AAE0BC203E422C00B11662 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AAE0BB203E422C00B11662 /* MainRouter.swift */; };
+		86AAE0BE203E43F600B11662 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AAE0BD203E43F600B11662 /* SnapshotHelper.swift */; };
+		86AAE0C7203E454A00B11662 /* Appfile in Resources */ = {isa = PBXBuildFile; fileRef = 86AAE0C4203E454A00B11662 /* Appfile */; };
+		86AAE0C8203E454A00B11662 /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = 86AAE0C5203E454A00B11662 /* Fastfile */; };
+		86AAE0C9203E454A00B11662 /* Snapfile in Resources */ = {isa = PBXBuildFile; fileRef = 86AAE0C6203E454A00B11662 /* Snapfile */; };
 		B98D509499D0A646E32C3DE6 /* Pods_AppChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E825E5B90A45BA19D4E173 /* Pods_AppChallengeTests.framework */; };
 		DEDCFB8A6FCFFEF065CC8F68 /* Pods_AppChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8033C6B80AFADBF0B6D0E7F /* Pods_AppChallengeUITests.framework */; };
 		FEB2EB773D8E5149C6211737 /* Pods_AppChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB9CDD66E5EE3F226DE5FF15 /* Pods_AppChallenge.framework */; };
@@ -64,6 +68,10 @@
 		86AAE0B6203E420300B11662 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		86AAE0B8203E420D00B11662 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		86AAE0BB203E422C00B11662 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		86AAE0BD203E43F600B11662 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		86AAE0C4203E454A00B11662 /* Appfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Appfile; path = fastlane/Appfile; sourceTree = "<group>"; };
+		86AAE0C5203E454A00B11662 /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Fastfile; path = fastlane/Fastfile; sourceTree = "<group>"; };
+		86AAE0C6203E454A00B11662 /* Snapfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Snapfile; path = fastlane/Snapfile; sourceTree = "<group>"; };
 		99D954A1B59A8826EC530365 /* Pods-AppChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppChallenge/Pods-AppChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		A03E7AF21374951B03355AEA /* Pods-AppChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppChallengeTests/Pods-AppChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		B81CC93A1B0FC4EF056463C8 /* Pods-AppChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppChallengeUITests/Pods-AppChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -112,6 +120,7 @@
 		8685EAE4203E3BA30038FE64 = {
 			isa = PBXGroup;
 			children = (
+				86AAE0C1203E452200B11662 /* Documentation */,
 				8685EAEF203E3BA30038FE64 /* AppChallenge */,
 				8685EB04203E3BA30038FE64 /* AppChallengeTests */,
 				8685EB0F203E3BA30038FE64 /* AppChallengeUITests */,
@@ -158,6 +167,7 @@
 		8685EB0F203E3BA30038FE64 /* AppChallengeUITests */ = {
 			isa = PBXGroup;
 			children = (
+				86AAE0BD203E43F600B11662 /* SnapshotHelper.swift */,
 				8685EB10203E3BA30038FE64 /* AppChallengeUITests.swift */,
 				8685EB12203E3BA30038FE64 /* Info.plist */,
 			);
@@ -221,6 +231,16 @@
 				8685EAF0203E3BA30038FE64 /* AppDelegate.swift */,
 			);
 			name = ApplicationBase;
+			sourceTree = "<group>";
+		};
+		86AAE0C1203E452200B11662 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				86AAE0C4203E454A00B11662 /* Appfile */,
+				86AAE0C5203E454A00B11662 /* Fastfile */,
+				86AAE0C6203E454A00B11662 /* Snapfile */,
+			);
+			name = Documentation;
 			sourceTree = "<group>";
 		};
 		B9CC12575C8D023677159C73 /* Pods */ = {
@@ -369,6 +389,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86AAE0C9203E454A00B11662 /* Snapfile in Resources */,
+				86AAE0C8203E454A00B11662 /* Fastfile in Resources */,
+				86AAE0C7203E454A00B11662 /* Appfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,6 +577,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8685EB11203E3BA30038FE64 /* AppChallengeUITests.swift in Sources */,
+				86AAE0BE203E43F600B11662 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -4,10 +4,33 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AppChallenge.xcscheme</key>
+		<key>AppChallenge.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>5</integer>
+		</dict>
+		<key>AppChallengeUITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>8685EAEC203E3BA30038FE64</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8685EB00203E3BA30038FE64</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8685EB0B203E3BA30038FE64</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
