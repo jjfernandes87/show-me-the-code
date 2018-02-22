@@ -8,28 +8,54 @@
 
 import UIKit
 
+protocol ListingRouter {
+    func showDetail()
+}
+
 class MainRouter: UINavigationController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    var window: UIWindow?
+    let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+    
+    convenience init(window: UIWindow?) {
+        self.init()
+        self.window = window
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    /// Launch navigation with car repair listing
+    func launch() {
+        viewControllers = [loadListing()]
+        window?.rootViewController = self
     }
-    */
+    
+}
 
+// MARK: - Listing methods
+extension MainRouter {
+    fileprivate func loadListing() -> UIViewController {
+        
+        let presenter = ListingPresenter()
+        let controller = mainStoryBoard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        
+        controller.presenter = presenter
+        presenter.viewProtocol = controller
+        presenter.router = self
+        
+        return controller
+    }
+}
+
+// MARK: - DetailRouter methods
+extension MainRouter: ListingRouter {
+    
+    func showDetail() {
+        let controller = loadDetail()
+        pushViewController(controller, animated: true)
+    }
+    
+    fileprivate func loadDetail() -> UIViewController {
+        let controller = mainStoryBoard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        return controller
+    }
+    
 }
