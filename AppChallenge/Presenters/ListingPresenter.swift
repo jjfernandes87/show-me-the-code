@@ -10,7 +10,7 @@ import UIKit
 
 class ListingPresenter: NSObject {
     
-    weak var viewProtocol: ViewController?
+    weak var viewProtocol: TableController?
     var router: ListingRouter?
     
 }

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TableController.swift
 //  AppChallenge
 //
 //  Created by Julio Fernandes on 21/02/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TableController: UIBaseViewController {
 
     var presenter: ViewControllerInterfaceProtocols!
     
@@ -20,14 +20,15 @@ class ViewController: UIViewController {
     }
     
     func applyZeroResultView() {
-        
+        setViewStatus(status: .missResult, animated: true)
     }
     
     func applyExceptionView() {
-        
+        setViewStatus(status: .exceptions, animated: true)
     }
     
     func applyWithoutNetwork() {
-        
+        setViewStatus(status: .network)
     }
+    
 }
