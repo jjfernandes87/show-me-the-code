@@ -19,6 +19,14 @@ class TableController: UIBaseViewController {
         presenter.viewDidLoad()
     }
     
+    override func downloadData(viewOccasion: DownloadOccasion) -> Bool {
+        if viewOccasion == .viewDidAppear {
+            presenter.downloadData()
+            return true
+        }
+        return false
+    }
+    
     func applyZeroResultView() {
         setViewStatus(status: .missResult, animated: true)
     }
@@ -27,8 +35,9 @@ class TableController: UIBaseViewController {
         setViewStatus(status: .exceptions, animated: true)
     }
     
-    func applyWithoutNetwork() {
-        setViewStatus(status: .network)
+    func applyPresentingView() {
+        tableView.reloadData()
+        setViewStatus(status: .presenting, animated: true)
     }
     
 }

@@ -10,4 +10,5 @@ import UIKit
 
 protocol ViewControllerInterfaceProtocols: class {
     func viewDidLoad()
+    func downloadData()
 }

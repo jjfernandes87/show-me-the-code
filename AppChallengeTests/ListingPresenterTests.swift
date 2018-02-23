@@ -55,12 +55,11 @@ class ListingPresenterTests: XCTestCase {
 
 // MARK: - Helper
 extension ListingPresenterTests {
-    fileprivate func loadViewController() -> ViewController {
-        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        return storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+    fileprivate func loadViewController() -> TableController {
+        return TableControllerInfo().instantiateViewController()
     }
     
-    fileprivate func runViewController(presenter: ListingPresenter) -> ViewController {
+    fileprivate func runViewController(presenter: ListingPresenter) -> TableController {
         let controller = loadViewController()
         controller.presenter = presenter
         _ = controller.view
