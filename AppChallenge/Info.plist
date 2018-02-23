@@ -40,6 +40,6 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>Scheme</key>
-	<string>release</string>
+	<string>debug</string>
 </dict>
 </plist>

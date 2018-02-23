@@ -7,7 +7,7 @@
 		<key>endpoints</key>
 		<dict>
 			<key>listing</key>
-			<string>https://maps.googleapis.com/maps/api/place/nearbysearch/json</string>
+			<string>${bundle}/listing</string>
 			<key>detail</key>
 			<string>https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJN1t_tDeuEmsRUsoyG83frY4&amp;key=YOUR_API_KEY</string>
 		</dict>
