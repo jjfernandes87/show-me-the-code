@@ -12,11 +12,13 @@ protocol ListingRouter {
     func showDetail()
 }
 
-struct ListingControllerInfo {
+struct StoryBoardInfo {
     let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
-    func instantiateViewController() -> ListingController {
+    func instantiateListingViewController() -> ListingController {
         return mainStoryBoard.instantiateViewController(withIdentifier: "ListingController") as! ListingController
-        
+    }
+    func instantiateDetailViewController() -> DetailController {
+        return mainStoryBoard.instantiateViewController(withIdentifier: "DetailController") as! DetailController
     }
 }
 
@@ -42,7 +44,7 @@ extension MainRouter {
     fileprivate func loadListing() -> UIViewController {
         
         let presenter = ListingPresenter()
-        let controller = ListingControllerInfo().instantiateViewController()
+        let controller = StoryBoardInfo().instantiateListingViewController()
         
         controller.presenter = presenter
         presenter.viewProtocol = controller
@@ -61,7 +63,7 @@ extension MainRouter: ListingRouter {
     }
     
     fileprivate func loadDetail() -> UIViewController {
-        let controller = ListingControllerInfo().instantiateViewController()
+        let controller = StoryBoardInfo().instantiateDetailViewController()
         return controller
     }
     

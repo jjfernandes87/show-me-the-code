@@ -100,6 +100,7 @@ extension UIBaseViewController {
             if let loading = uiLoadingView {
                 view.bringSubview(toFront: loading)
                 loading.alpha = 1.0
+                setNetworkActivity(visible: true)
             }
         }
         
@@ -118,6 +119,7 @@ extension UIBaseViewController {
         }
         
         if status == .presenting {
+            setNetworkActivity(visible: false)
             if uiExceptionsView != nil && uiLoadingView != nil {
                 uiLoadingView?.alpha = 0.0
                 uiExceptionsView?.alpha = 0.0
@@ -127,5 +129,9 @@ extension UIBaseViewController {
         }
         
         if(animated) { UIView.commitAnimations() }
+    }
+    
+    private func setNetworkActivity(visible: Bool) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible  = visible
     }
 }

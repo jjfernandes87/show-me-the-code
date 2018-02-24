@@ -45,7 +45,7 @@ class ListingControllerTests: XCTestCase {
 // MARK: - Helper
 extension ListingControllerTests {
     fileprivate func loadViewController() -> ListingController {
-        return ListingControllerInfo().instantiateViewController()
+        return StoryBoardInfo().instantiateListingViewController()
     }
     
     fileprivate func runViewController(presenter: ListingPresenter) -> ListingController {

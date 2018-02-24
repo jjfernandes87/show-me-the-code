@@ -23,10 +23,25 @@ class AppChallengeUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testListing() {
         let app = XCUIApplication()
         XCTAssertTrue(app.staticTexts["Moses & Sons Smash Repairs 2"].exists)
+        XCTAssertTrue(app.navigationBars["Listing"].exists)
         snapshot("0Listing")
     }
     
+    func testListingPushToDetail() {
+        let app = XCUIApplication()
+        let tableQuery = app.tables
+        tableQuery.cells.element(boundBy: 0).tap()
+        XCTAssertFalse(app.staticTexts["Moses & Sons Smash Repairs 2"].exists)
+    }
+    
+    func testDetail() {
+        let app = XCUIApplication()
+        let tableQuery = app.tables
+        tableQuery.cells.element(boundBy: 0).tap()
+        XCTAssertTrue(app.navigationBars["Detail"].exists)
+        snapshot("1Detail")
+    }
 }

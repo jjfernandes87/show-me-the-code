@@ -10,7 +10,7 @@ import UIKit
 
 class ListingController: UIBaseViewController {
 
-    var presenter: ViewControllerInterfaceProtocols!
+    var presenter: ViewControllerProtocols!
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -20,7 +20,7 @@ class ListingController: UIBaseViewController {
     }
     
     override func downloadData(viewOccasion: DownloadOccasion) -> Bool {
-        if viewOccasion == .viewDidAppear {
+        if viewOccasion == .viewDidLoad {
             presenter.downloadData()
             return true
         }

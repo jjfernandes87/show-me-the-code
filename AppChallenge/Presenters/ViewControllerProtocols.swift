@@ -1,5 +1,5 @@
 //
-//  ViewControllerInterfaceProtocols.swift
+//  ViewControllerProtocols.swift
 //  AppChallenge
 //
 //  Created by Julio Fernandes on 22/02/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol ViewControllerInterfaceProtocols: class {
+protocol ViewControllerProtocols: class {
     func viewDidLoad()
     func downloadData()
 }

@@ -16,12 +16,13 @@ class ListingPresenter: NSObject {
     var service = (interactor: PlacesInteractor(), result: [CarRepair]() )
 }
 
-// MARK: - ViewControllerInterfaceProtocols methods
-extension ListingPresenter: ViewControllerInterfaceProtocols {
+// MARK: - ViewControllerProtocols methods
+extension ListingPresenter: ViewControllerProtocols {
     
     func viewDidLoad() {
         guard let controller = viewProtocol else { return }
         controller.tableView.dataSource = self
+        controller.tableView.delegate = self
     }
     
     /// download listing data
@@ -54,4 +55,12 @@ extension ListingPresenter: UITableViewDataSource {
         return cell
     }
     
+}
+
+// MARK: - UITableViewDelegate methods
+extension ListingPresenter: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        router?.showDetail()
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
