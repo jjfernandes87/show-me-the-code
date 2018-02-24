@@ -29,8 +29,8 @@ class MainRouterTests: XCTestCase {
         let router = MainRouter(window: nil)
         router.launch()
         let controller = router.viewControllers.first
-        XCTAssert(controller is TableController)
-        XCTAssert(controller is TableController, "First controller is ViewController class type")
+        XCTAssert(controller is ListingController)
+        XCTAssert(controller is ListingController, "First controller is ViewController class type")
     }
     
 }

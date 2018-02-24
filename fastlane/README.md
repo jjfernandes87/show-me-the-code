@@ -21,6 +21,16 @@ or alternatively using `brew cask install fastlane`
 fastlane ios screenshots
 ```
 Generate new localized screenshots
+### ios tests
+```
+fastlane ios tests
+```
+Runs all the tests
+### ios coverage
+```
+fastlane ios coverage
+```
+Runs Coverage
 
 ----
 

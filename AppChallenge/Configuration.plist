@@ -4,22 +4,26 @@
 <dict>
 	<key>debug</key>
 	<dict>
+		<key>googleAPIKEY</key>
+		<string>AIzaSyCxmDvGnuO7NXfGt-DiviuxOZOwYDgnqPc</string>
 		<key>endpoints</key>
 		<dict>
 			<key>listing</key>
 			<string>${bundle}/listing</string>
 			<key>detail</key>
-			<string>https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJN1t_tDeuEmsRUsoyG83frY4&amp;key=YOUR_API_KEY</string>
+			<string>${bundle}/detail</string>
 		</dict>
 	</dict>
 	<key>release</key>
 	<dict>
+		<key>googleAPIKEY</key>
+		<string>AIzaSyCxmDvGnuO7NXfGt-DiviuxOZOwYDgnqPc</string>
 		<key>endpoints</key>
 		<dict>
 			<key>listing</key>
 			<string>https://maps.googleapis.com/maps/api/place/nearbysearch/json</string>
 			<key>detail</key>
-			<string>https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJN1t_tDeuEmsRUsoyG83frY4&amp;key=YOUR_API_KEY</string>
+			<string>https://maps.googleapis.com/maps/api/place/details/json</string>
 		</dict>
 	</dict>
 </dict>

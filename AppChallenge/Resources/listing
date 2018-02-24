@@ -1,37 +1,667 @@
 {
-"html_attributions": [],
-"results": [
-{
-"geometry": {
-"location": {
-"lat": -33.87054500000001,
-"lng": 151.194722
-},
-"viewport": {
-"northeast": {
-"lat": -33.86924251970851,
-"lng": 151.1959562802915
-},
-"southwest": {
-"lat": -33.8719404802915,
-"lng": 151.1932583197085
-}
-}
-},
-"icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
-"id": "2f50bbfae132abbb07fa184cb826e1d29555cb53",
-"name": "Moses & Sons Smash Repairs 2",
-"place_id": "ChIJDSR7MTGuEmsR9-82GmIk__E",
-"rating": 5,
-"reference": "CmRSAAAAW2md8uDb9mkbD3dC--qUdDnCSSsgSwNCQDnJUW-cvHTZhIHj_DwisdydjHhYVe-F3f7hg8NO0YGSrJuOmXeB_mXXFcxuMahGIPDqBz0r2fbWijopFBgji2SnluSUqiyXEhBkkjPD4z1N4ZZ7eeu4jfE4GhRvOO_CzKTocOxzsb9fe717DjJ0Nw",
-"scope": "GOOGLE",
-"types": [
-"car_repair",
-"point_of_interest",
-"establishment"
-],
-"vicinity": "192 Harris Street, Pyrmont"
-}
-],
-"status": "OK"
+    "html_attributions": [],
+    "results": [
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.62923019999999,
+                "lng": -46.5897638
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.62783626970849,
+                "lng": -46.5883870197085
+                },
+                "southwest": {
+                "lat": -23.6305342302915,
+                "lng": -46.5910849802915
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+                "id": "42920e3079c2bcb827e8c2a5542d2e6de6a4c612",
+                "name": "DG Baterias",
+                "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+                },
+                "photos": [
+                           {
+                           "height": 728,
+                           "html_attributions": [
+                                                 "<a href=\"https://maps.google.com/maps/contrib/104483152886642020994/photos\">DG Baterias</a>"
+                                                 ],
+                           "photo_reference": "CmRaAAAAPfVqKlvM0XEOtiPYVXqIfdIKP7yc__5Y6JzOmCBVrWuyRBP42eQes7R52JIMao6-V-BxaWu1Pb20IV914nZGVgd-lUNWoS1IC1tWf91VlUBQde1BOK9hlJe9GyWnLNB7EhBJnDKXIf2s_XXMDSTBQGtcGhTfoaO763_gU5EL0PLfkN1z1sz2TA",
+                           "width": 1296
+                           }
+                           ],
+                "place_id": "ChIJh2v3v6FczpQR4jX7I699K6E",
+                "rating": 3.7,
+                "reference": "CmRSAAAAV6OzOJCw9LYolZB_tdVgQnVTx_5ueX5VO4DK38pWMmiIpM1JerCD5jTqL1LPbRJlvzkStFzyz8VQLONdAOXR7GO29t4PfpNQimyMdl8MzycDk5_Q54nOGXig3DruGnDcEhD-ZbfXZt4q5_nIHaEaBxxIGhS_8vFXd08NUNOxfAtADzxdqBPn2Q",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "store",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Estrada das Lágrimas, 3220 - Jardim Patente Novo, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.6292875,
+                "lng": -46.5892812
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6279666697085,
+                "lng": -46.5879496197085
+                },
+                "southwest": {
+                "lat": -23.6306646302915,
+                "lng": -46.5906475802915
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                "id": "985fe722d0fc377893d000da6ead8326e7acd593",
+                "name": "De Martins",
+                "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+                },
+                "photos": [
+                           {
+                           "height": 2448,
+                           "html_attributions": [
+                                                 "<a href=\"https://maps.google.com/maps/contrib/105951186143201907860/photos\">De Martins</a>"
+                                                 ],
+                           "photo_reference": "CmRaAAAA9GpEnXyCM0OqIFZ5oRxWnbEZu-TcIW-Iaf7jFT1iBWHfI332nB4TyeBcZDW82L9x0jJZ4UcIoZr5deDkdl2SRhBVO6bmLrrDin8fo5VYpVnDnaAlOGtg8FHN3hlANrAIEhCLzX8N_AcfGhcg1gbgwYoDGhT8m22MVZYHoPKAt2LSgd9AuFmS-w",
+                           "width": 3264
+                           }
+                           ],
+                "place_id": "ChIJX1nUk6FczpQRg_v-S_QoxNw",
+                "reference": "CmRSAAAA0DaB8E7BKzkUAU0L4HhbisPHlu2yf_-Nficv75zTUCbUy_TnzwBze4Lp-jfgB-jV1mX3Ar9Y6donAYyUUY7_u4b0FhpQuLbaL-xHU3ZNfXLIP6ZfeCUs-Wmb4MeWBi9gEhCXCvBIpxwubV6AD-Pu2n3WGhRftbZuHm1Mic4JfYOD3qbUaAOaSw",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Estrada das Lágrimas, 3383 - Jardim Patente Novo, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.6296651,
+                "lng": -46.5955062
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6282901197085,
+                "lng": -46.5943482697085
+                },
+                "southwest": {
+                "lat": -23.6309880802915,
+                "lng": -46.5970462302915
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+                "id": "8982e0de701c230433beeb0e112a3d0746d2d0bb",
+                "name": "Itaesbra Mechanical Industry",
+                "place_id": "ChIJx0EdgWBbzpQRtOOX1MgFy6E",
+                "reference": "CmRSAAAA8tterkVtLrhRdgjtobYOHadoTrq9qJyL-rio-NNoVPKNliP4R4IcXU-GeO0ZC_Vc99-s3z_rqz4pddkQIoGb8DnhbsqSifUT5sHPR8dqM1iod2tC9AOdwAJHlWqIJGA_EhCeps5_JajENzAPCIhr6i2tGhStgtv6HYyUYSdn88LQ-xJ6CJwtug",
+                "scope": "GOOGLE",
+                "types": [
+                          "department_store",
+                          "car_repair",
+                          "store",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Rua Edmundo Carvalho, 777 - São João Climaco, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.627964,
+                "lng": -46.593888
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6266150197085,
+                "lng": -46.5925390197085
+                },
+                "southwest": {
+                "lat": -23.6293129802915,
+                "lng": -46.5952369802915
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                "id": "68c7a4409d6f76f69d07e19d05d413f2fd10f22a",
+                "name": "Funilaria e Pintura",
+                "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+                },
+                "place_id": "ChIJnRqTGGBbzpQRjCZ0q6mV_yY",
+                "reference": "CmRRAAAAtv6LG983z9DNGK4tBxVfk3IkEdJC7DsMd5-OmpRt3MHHa5TXMd7GnjWAMfUcQJN0fV7yVRhwGaGX7FkQy1RbZ8DnU-GaZ3M1IvAUkgRpf8CvQavXZjj5lkKHxF0uGy9yEhBAy7T-SM_yOaFjO1CchvDeGhS4XMF0ipqnnczznN4oIPqZpU4Ftw",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Fraterno de Melo Almada - Ao lado do Lava Rapido Santana - São João Climaco, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.6273312,
+                "lng": -46.5925951
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6260236197085,
+                "lng": -46.5912167697085
+                },
+                "southwest": {
+                "lat": -23.6287215802915,
+                "lng": -46.5939147302915
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+                "id": "fee39d2fc2f1923b5dc50db397fe0e6618dc8644",
+                "name": "AUTO PEÇAS FERNANDO",
+                "opening_hours": {
+                "open_now": false,
+                "weekday_text": []
+                },
+                "place_id": "ChIJeUz-xJ9czpQRYkwZJoWbZEw",
+                "reference": "CmRRAAAAydXC0ugSDbb1dMC6gPEw_IQCC1d4GO6HCuwuOvthCA-oAn_CtdPRDYMW2xHwx3jbBJzk2Rgi1P0Ht_b3hEpZzurdkIUOnExIi0pxLn2oPANBL1KbWv-67FuOXKxxwzbGEhAu-sCzf8KpyuYWuDkFbTnjGhSXbArWp8gL2swXzo2yAkW77vJ3lA",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "store",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Rua Fraterno de Melo Almada, 157 - São João Climaco, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.6298695,
+                "lng": -46.5887246
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6285740697085,
+                "lng": -46.5873612697085
+                },
+                "southwest": {
+                "lat": -23.6312720302915,
+                "lng": -46.5900592302915
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                "id": "3f9c532105a069bba44562265fe43ed124a8bd11",
+                "name": "Marcão Lanternas Faróis",
+                "place_id": "ChIJWcIHgqFczpQRtzpQop1pHfk",
+                "reference": "CmRSAAAAHJL9FwOvZNjem3x_0Xda_oyDnRbPWdq9YQUoDR2uUYReMjknT1x0GpuxxDK1j1Xn7PsqEFusZjedXvY6KAOmxhE_3pHSrs-oidmPIT63w5XmXOO8qsQ5Cbl-fweRG31hEhCCIpxqjKIUJuUeyU_O4lGzGhR3HmyE05Cz7qOwJ-qdE49g5Suimg",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Rua Tito Oliani, 963 - São João Climaco, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.6332651,
+                "lng": -46.59093949999999
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6319796197085,
+                "lng": -46.58956961970849
+                },
+                "southwest": {
+                "lat": -23.6346775802915,
+                "lng": -46.59226758029148
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                "id": "9161a4b4235045cb8195c79340b890411c7aa2ba",
+                "name": "Laércio Car",
+                "opening_hours": {
+                "open_now": false,
+                "weekday_text": []
+                },
+                "place_id": "ChIJNSWDKqdczpQRt7njq1CZ_qc",
+                "rating": 5,
+                "reference": "CmRSAAAA6HHke35aC-1FCPlwDWr4huph3KC1j3ErymJtZwJYGdXW3H5q_v7ei_J5KQ6BDZRsNULgpImcapnjOtN8c-oZB8g-tMM5mlfENKnL3XWEkrJBerqCpNclLtvfM7EJHMIzEhDml5D3OA5qjmwgqZpqJdOZGhQgI0bMld0JwBZ31n45sxFjojtb6w",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Rua Francisco Siracusa, 56 - Parque Fongaro, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.6295431,
+                "lng": -46.5915933
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6282279197085,
+                "lng": -46.5902365197085
+                },
+                "southwest": {
+                "lat": -23.6309258802915,
+                "lng": -46.59293448029149
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+                "id": "5357bcf5909ec507bf3ccdcae284313524004cff",
+                "name": "Tapeçaria Móvel Car",
+                "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+                },
+                "photos": [
+                           {
+                           "height": 311,
+                           "html_attributions": [
+                                                 "<a href=\"https://maps.google.com/maps/contrib/101012495210028150498/photos\">Tapeçaria Móvel Car</a>"
+                                                 ],
+                           "photo_reference": "CmRaAAAAD5k7mPspcmRahgJSRt-VpksnPVHWc9MKXZJeW8m7DjLX1oYgyfBysVK19E_kwXrGpJrWUmyfkrOY4yMojftMQuIoujJmjJOMWAQwfIFxl7uR1ZEX09ZN2iBYOGMYxCIfEhDkAyBA8s_iW7hiYkcv5QwRGhTBM5BE98hiD82tfuM3tEXtcu0j6g",
+                           "width": 640
+                           }
+                           ],
+                "place_id": "ChIJWdMCOqBczpQRYedXMeWBSiU",
+                "rating": 4.8,
+                "reference": "CmRRAAAAWvHtd6u44-VVnJaoMm1lTMzpfrIrVYr-9aYRfu8rkM6BmXUIvNknVTSKQj-NoufWLrVwMH7lhl-zW3AkqaGjDZjwGwRRao1JTNy4J_JHGQ0q036GJ_9Y0QmOJUMjgCNJEhBprsYBY7flo1hkyqT9UH6EGhQyou3KRi08aSvrs5eH96UTWBYupw",
+                "scope": "GOOGLE",
+                "types": [
+                          "furniture_store",
+                          "car_repair",
+                          "home_goods_store",
+                          "store",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Rua Tito Oliani, 655 - São João Climaco, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.633364,
+                "lng": -46.59010989999999
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6319825197085,
+                "lng": -46.5887707697085
+                },
+                "southwest": {
+                "lat": -23.6346804802915,
+                "lng": -46.59146873029149
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                "id": "939dd81faa5f10a6a8888a95e7dbc7b0977e36b4",
+                "name": "Thiago Auto Elétrico",
+                "place_id": "ChIJ54MWz6ZczpQRSkU5SnLxrCs",
+                "reference": "CmRRAAAAqttB5bS4IeabrtX_BRdHGQ-JD0uv36bJRFwZqiaJ3NVBjTpsYUYEhRkY1MJ-j66r4piAT5DJczNIbUoLMAF0-aFGmup0dbcMowe-_5znIKIxnwZsA5S35UXqdArbb63xEhD5jHMC3hjiDMQ_YYbRnZVrGhRvqQeSQkp57Q_XyY7LoQfRmvTiOg",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Rua Colombo Florence, 449 - Parque Fongaro, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.629232,
+                "lng": -46.5898315
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6278250197085,
+                "lng": -46.5884437197085
+                },
+                "southwest": {
+                "lat": -23.6305229802915,
+                "lng": -46.5911416802915
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                "id": "2cc52f3070f4f3ce247780266583dbe34ed01d8f",
+                "name": "Coca motos",
+                "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+                },
+                "photos": [
+                           {
+                           "height": 719,
+                           "html_attributions": [
+                                                 "<a href=\"https://maps.google.com/maps/contrib/105651830196363707204/photos\">Coca motos</a>"
+                                                 ],
+                           "photo_reference": "CmRaAAAAf1XTh-9r8zvihPcYw60br6X1l1FJMN9yc69h1DDGvZVDc72bMwfTyTCAliDwqPhe-kRrVJMGObOXdGt7OzKpsfKN4BFgytnRFwQsW7pu7cxe1GaKNRJhJYK-MmNertHlEhDZjFoKFKKjR6_a1BBrFoy6GhThGWOZ1aHHqtcxcS1W4iIYifUCqA",
+                           "width": 721
+                           }
+                           ],
+                "place_id": "ChIJg5cCxKFczpQRZKWdhXjiW2w",
+                "rating": 5,
+                "reference": "CmRRAAAAsPjRnps0Qv1T9fUaQN0fSeg0fV4vmknWpZ-kApqPMZVT22Cmf1Xd78BnV1EmT7lq9MTzcvoxXdq6cjCe4eJ-aa9xiJiQyfD68wlTuBdnPHJzUJSeIh55zcS4GyuodCNcEhBY5yQHtomKp7TuXrKYuOQZGhRdX5mOLnML08ztx56sl-4f5l7mJw",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Estrada das Lágrimas, 3210 - Sacomã, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.6288613,
+                "lng": -46.5902822
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6274823697085,
+                "lng": -46.5888988697085
+                },
+                "southwest": {
+                "lat": -23.6301803302915,
+                "lng": -46.5915968302915
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+                "id": "17b6979c30b8522791768fa51356c8b3cc9aa24d",
+                "name": "Borracharia do Ceará",
+                "opening_hours": {
+                "open_now": false,
+                "weekday_text": []
+                },
+                "place_id": "ChIJA3dsxaFczpQRejHh2FqulLU",
+                "rating": 1,
+                "reference": "CmRSAAAA7cYGQs3JQK-QYySDLlVY7tLGBbKdcgBez3sznnIjVsPZrmXK5UcjDFSdQIQSTn9YJ3tMKthL1sIcbBm7lqC5leimPnur3VlPz5eXeLdZXI7lOZFaW_VICubhK_xGf0DjEhBDzKNn8JJXdjvD3xK_kgOmGhTpgC1u5qWb4PGNNH4yj4b_-7LMIA",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "store",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Estrada das Lágrimas, 3154 - Jardim Patente Novo, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.629851,
+                "lng": -46.589073
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.62857796970849,
+                "lng": -46.5877311697085
+                },
+                "southwest": {
+                "lat": -23.6312759302915,
+                "lng": -46.59042913029149
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                "id": "6a5ecc1e09362e0430fe333ef5de28419a484b84",
+                "name": "Auto Mecânica Gv",
+                "place_id": "ChIJv8_6nKFczpQRa-aVWeVbrys",
+                "reference": "CmRRAAAAIsr0WPsnt6vO0Q05XxnhpENuou8jaLCgiu451u3roy52Y3-9UZU13VPV9Pq-i-v205RosIcmh--XKQHQH2gh-XBMWm1qJGHgmh5Ds-khIEL0q0rjfek7N5r9ElJHuEbuEhBMmTd3WCP14yEEWXnWvwtQGhSRzGKuxDNYyUwgGhqwytmYqjykQw",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Rua Tito Oliani, 923 - São João Climaco, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.6286372,
+                "lng": -46.5904657
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6272687697085,
+                "lng": -46.58908976970849
+                },
+                "southwest": {
+                "lat": -23.6299667302915,
+                "lng": -46.59178773029149
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+                "id": "1e308c523c1fd721173d830dd782f561b03c50cb",
+                "name": "RA. Baterias",
+                "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+                },
+                "place_id": "ChIJj-D80KFczpQRmw7hwN_Pirw",
+                "reference": "CmRSAAAAmqSwWJClEc694p9_C4y7fqBqqAYzOtIapiCF8epaZWbTATnXKmACOn4PX4RhFwD-jtmJT9A9uQL2I4rUZKT6VI1g5gtNrmeod1uxVxMX-kb4jFJlnCgYWuhvnOU0Oz_LEhDkhDbQmKNesBllREtPB6n9GhTX7wNJvs57Uwq7CR1HAvu3tbGc2w",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "store",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Estrada das Lágrimas, 3120 - São João Climaco, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.629618,
+                "lng": -46.588864
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6282276197085,
+                "lng": -46.5875128697085
+                },
+                "southwest": {
+                "lat": -23.6309255802915,
+                "lng": -46.5902108302915
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+                "id": "f7644135e26ea5cf59697c250064c4ed5df2d599",
+                "name": "Pontual Moto Peças",
+                "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+                },
+                "photos": [
+                           {
+                           "height": 1836,
+                           "html_attributions": [
+                                                 "<a href=\"https://maps.google.com/maps/contrib/117693971013091390882/photos\">Pontual Moto Peças</a>"
+                                                 ],
+                           "photo_reference": "CmRaAAAAzI_zQM70RRN3U7KcPcJJZyXaQZilCUaL9RNugpiBObBLvqmCCFaMjYViuaVAyr5oygccTk19nyAYlYRIL5o8eAyet6RKb73EqaY8nox9QOWPCpbZId1HKG2ywPxBEVQZEhCT8H9fyYaNmQLqoigy_z0qGhTNUznY7nvXJqmnNWQG3CTfSk9bKA",
+                           "width": 3264
+                           }
+                           ],
+                "place_id": "ChIJccHNhaFczpQRYsYuSrMwEKY",
+                "rating": 4.2,
+                "reference": "CmRSAAAAvZ_sctSBdnMYIZlGkCTx0ld8OBJ5h_rkpNFBWtgo8w9Rc1utbj04-YGY9fGB4wuzJeR2aSCfy5HDPNX8hJtKimFRs7P8jY8qol19iWa7o9faS_bw39HC8obVPXnZmXwAEhBu3Mxa8Ab12VJLNSFIqSSQGhRTgonKdr4G3-CgzaaUoFhPHruHRw",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "store",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Estrada das Lágrimas, 3422 - São João Climaco, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.6274771,
+                "lng": -46.59102679999999
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6261657697085,
+                "lng": -46.5897544697085
+                },
+                "southwest": {
+                "lat": -23.6288637302915,
+                "lng": -46.59245243029149
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                "id": "e218a17f64782e5f64d97172b3ebb2d8a5842143",
+                "name": "Auto Mecânica Possatti",
+                "place_id": "ChIJ9b5VnJ9czpQR7-Doqi0Ymeo",
+                "reference": "CmRSAAAAcFiqi4HblBUvlh1bNqeSMRDdLpW7-RGX4kDVD70kkizHb8JRlXe4hAW4hFZ8wGyNPGNUY6XMqYMmhrackMQDtPwNtnMN9gfJdVR2rQFXlW44hwjVqBn4hcf8AGStMrtUEhAwefPSBr6lNxVeH78cCwplGhRnqSYiDheFsptVznIkMMrEzYmLBw",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Estrada das Lágrimas, 2973 - São João Climaco, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.6274771,
+                "lng": -46.59102679999999
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6261657697085,
+                "lng": -46.5897544697085
+                },
+                "southwest": {
+                "lat": -23.6288637302915,
+                "lng": -46.59245243029149
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                "id": "44d45c5e1fa566b9a9bf20abfb32d4977569a7a8",
+                "name": "MR Auto Mecânica",
+                "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+                },
+                "photos": [
+                           {
+                           "height": 2448,
+                           "html_attributions": [
+                                                 "<a href=\"https://maps.google.com/maps/contrib/110094204604589744917/photos\">Márcio S.L.</a>"
+                                                 ],
+                           "photo_reference": "CmRaAAAAl6uTDfHGz1wK-2VqzXbZR4n-OU3SAVme4idwFgp2xo64TnwExraJU4jWcpT1nniLcQi-YFaYsZkvBqQiOvpUFPlDHVIg8byRiDM-YNLBO0VxN610TTcwsRb2OPby9AF2EhBO307PYvOtj0ArE3FDHqMbGhSYCjlusSUq5srb0Tr90YBI9FTdBQ",
+                           "width": 3264
+                           }
+                           ],
+                "place_id": "ChIJW_Nunp9czpQRyPMkpKFY4Dc",
+                "rating": 5,
+                "reference": "CmRRAAAAM85gNiebNFSx3xvPIqlUvUR5W9gftKsIeZYnE1E2KSRedJm5YVY_5UXaiwNZZOp8XXX-MrQ1aBXSYwqtHW3q7M--Qe0th81CRZK2mjfl6L2do74eGkX5Yp1fm8vrEmWcEhDtLrV63AVd4_b5dVl0C1FUGhQrrB-_9TzK0dLViwgz9GV8G_o_0g",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Estrada das Lágrimas, 2973 - São João Climaco, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.6319863,
+                "lng": -46.5965655
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6306373197085,
+                "lng": -46.5952165197085
+                },
+                "southwest": {
+                "lat": -23.6333352802915,
+                "lng": -46.5979144802915
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                "id": "cc115b1d372b5c2cd79e8f3b3359cbc20e1df191",
+                "name": "Samuel & Iso Serviços Automotivo",
+                "place_id": "ChIJEbD1RF5bzpQR68vmCtIqEjk",
+                "reference": "CmRRAAAAwyk4bIf8n3LWGjyBi7Csxu5nWpY4JctmeEh9yFU4h6V3yAzQmhk_fi9ds3MOXq3gRRDqgxyEuZjux6g2KyCqFn9ptv2Usp6PVfjKmeMLOcXnfzqMfD5pJeTe8294589GEhBZpqH6Xhhb_t2-yPkUbpOhGhQDoiTuBmLpo3UUuHiwZz76_zsTRA",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Via Anchieta 3398, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.6339439,
+                "lng": -46.5878362
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6325882197085,
+                "lng": -46.5864662697085
+                },
+                "southwest": {
+                "lat": -23.6352861802915,
+                "lng": -46.5891642302915
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                "id": "9a9269f2c02663cb948fc70a03071894e8d0a928",
+                "name": "Garcia e Rumi Auto Mecânica",
+                "place_id": "ChIJvY5AMKRczpQRdOc2FucWcO0",
+                "reference": "CmRSAAAAnhtmkBN039isFNceOfVKkLbtpCFUw4MbVyWWbFKkkxjqj6pYys1eNlRKwg_yqXHhfv2jS342Ziq8PeYNTJNSSl03D6O0UDUcs7EyOP-Lmy8nqIxrJltMOL82dhcra1z3EhCqCUV647P5ixw4rX4cv63KGhQW7EqjDegd1QPb2VYge2imc0fE0Q",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Rua Timbaúba, 131 - Vila Arapua, São Paulo"
+                }
+                ],
+    "status": "OK"
 }

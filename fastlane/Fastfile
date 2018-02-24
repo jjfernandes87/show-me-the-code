@@ -14,6 +14,17 @@ default_platform(:ios)
 platform :ios do
   desc "Generate new localized screenshots"
   lane :screenshots do
-    capture_screenshots(workspace: "AppChallenge.xcworkspace", scheme: "AppChallenge")
+    capture_screenshots(workspace: "AppChallenge.xcworkspace", scheme: "AppChallenge Debug")
   end
+
+  desc "Runs all the tests"
+  lane :tests do
+    scan(clean: true, code_coverage: true, scheme: "AppChallenge Debug")
+  end
+
+  desc "Runs Coverage"
+  lane :coverage do
+   slather(scheme: "AppChallenge Debug", workspace: "AppChallenge.xcworkspace", html: true, show: true)
+  end
+
 end

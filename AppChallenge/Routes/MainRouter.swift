@@ -9,14 +9,16 @@
 import UIKit
 
 protocol ListingRouter {
-    func showDetail()
+    func showDetail(placeId: String)
 }
 
-struct TableControllerInfo {
+struct StoryBoardInfo {
     let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
-    func instantiateViewController() -> TableController {
-        return mainStoryBoard.instantiateViewController(withIdentifier: "TableController") as! TableController
-        
+    func instantiateListingViewController() -> ListingController {
+        return mainStoryBoard.instantiateViewController(withIdentifier: "ListingController") as! ListingController
+    }
+    func instantiateDetailViewController() -> DetailController {
+        return mainStoryBoard.instantiateViewController(withIdentifier: "DetailController") as! DetailController
     }
 }
 
@@ -42,7 +44,7 @@ extension MainRouter {
     fileprivate func loadListing() -> UIViewController {
         
         let presenter = ListingPresenter()
-        let controller = TableControllerInfo().instantiateViewController()
+        let controller = StoryBoardInfo().instantiateListingViewController()
         
         controller.presenter = presenter
         presenter.viewProtocol = controller
@@ -55,13 +57,18 @@ extension MainRouter {
 // MARK: - DetailRouter methods
 extension MainRouter: ListingRouter {
     
-    func showDetail() {
+    func showDetail(placeId: String) {
+        let presenter = DetailPresenter(id: placeId)
         let controller = loadDetail()
+        
+        controller.presenter = presenter
+        presenter.viewProtocol = controller
+        
         pushViewController(controller, animated: true)
     }
     
-    fileprivate func loadDetail() -> UIViewController {
-        let controller = TableControllerInfo().instantiateViewController()
+    fileprivate func loadDetail() -> DetailController {
+        let controller = StoryBoardInfo().instantiateDetailViewController()
         return controller
     }
     

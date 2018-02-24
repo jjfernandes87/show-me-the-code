@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='AppChallengeUITests.xctest' tests='16' failures='0'>
+  <testsuite name='AppChallengeTests.AppChallengeTests' tests='2' failures='0'>
+    <testcase classname='AppChallengeTests.AppChallengeTests' name='testExample' time='0.001'/>
+    <testcase classname='AppChallengeTests.AppChallengeTests' name='testPerformanceExample' time='0.336'/>
+  </testsuite>
+  <testsuite name='AppChallengeTests.CairRepairTests' tests='2' failures='0'>
+    <testcase classname='AppChallengeTests.CairRepairTests' name='testCairRepair' time='0.005'/>
+    <testcase classname='AppChallengeTests.CairRepairTests' name='testCarRepairCollection' time='0.001'/>
+  </testsuite>
+  <testsuite name='AppChallengeTests.ListingControllerTests' tests='3' failures='0'>
+    <testcase classname='AppChallengeTests.ListingControllerTests' name='testApplyExceptionView' time='0.009'/>
+    <testcase classname='AppChallengeTests.ListingControllerTests' name='testApplyPresentingView' time='0.006'/>
+    <testcase classname='AppChallengeTests.ListingControllerTests' name='testApplyZeroResultView' time='0.056'/>
+  </testsuite>
+  <testsuite name='AppChallengeTests.ListingPresenterTests' tests='4' failures='0'>
+    <testcase classname='AppChallengeTests.ListingPresenterTests' name='testListingPresenterAssignedDataSource' time='0.006'/>
+    <testcase classname='AppChallengeTests.ListingPresenterTests' name='testListingPresenterNotAssignedDataSource' time='0.006'/>
+    <testcase classname='AppChallengeTests.ListingPresenterTests' name='testListingPresenterWithRouter' time='0.001'/>
+    <testcase classname='AppChallengeTests.ListingPresenterTests' name='testListingPresenterWithViewProtocol' time='0.001'/>
+  </testsuite>
+  <testsuite name='AppChallengeTests.MainRouterTests' tests='2' failures='0'>
+    <testcase classname='AppChallengeTests.MainRouterTests' name='testNumberOfViewControllers' time='0.001'/>
+    <testcase classname='AppChallengeTests.MainRouterTests' name='testRootControllerType' time='0.001'/>
+  </testsuite>
+  <testsuite name='AppChallengeUITests.AppChallengeUITests' tests='3' failures='0'>
+    <testcase classname='AppChallengeUITests.AppChallengeUITests' name='testDetail' time='7.357'/>
+    <testcase classname='AppChallengeUITests.AppChallengeUITests' name='testListing' time='7.261'/>
+    <testcase classname='AppChallengeUITests.AppChallengeUITests' name='testListingPushToDetail' time='5.579'/>
+  </testsuite>
+</testsuites>

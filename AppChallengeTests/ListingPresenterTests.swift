@@ -42,6 +42,7 @@ class ListingPresenterTests: XCTestCase {
         let presenter = ListingPresenter()
         let controller = runViewController(presenter: presenter)
         XCTAssertNil(controller.tableView.dataSource, "Tableview not assigned datasource")
+        XCTAssertNil(controller.tableView.delegate, "Tableview not assigned delegate")
     }
     
     func testListingPresenterAssignedDataSource() {
@@ -50,16 +51,17 @@ class ListingPresenterTests: XCTestCase {
         presenter.viewProtocol = controller
         presenter.viewDidLoad()
         XCTAssertNotNil(controller.tableView.dataSource, "Tableview assigned datasource")
+        XCTAssertNotNil(controller.tableView.delegate, "Tableview assigned delegate")
     }
 }
 
 // MARK: - Helper
 extension ListingPresenterTests {
-    fileprivate func loadViewController() -> TableController {
-        return TableControllerInfo().instantiateViewController()
+    fileprivate func loadViewController() -> ListingController {
+        return StoryBoardInfo().instantiateListingViewController()
     }
     
-    fileprivate func runViewController(presenter: ListingPresenter) -> TableController {
+    fileprivate func runViewController(presenter: ListingPresenter) -> ListingController {
         let controller = loadViewController()
         controller.presenter = presenter
         _ = controller.view
