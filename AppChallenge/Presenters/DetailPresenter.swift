@@ -9,5 +9,23 @@
 import UIKit
 
 class DetailPresenter: NSObject {
+    
+    weak var viewProtocol: DetailController?
+    
+    var service = PlacesInteractor()
+}
 
+extension DetailPresenter: ViewControllerProtocols {
+    
+    func viewDidLoad() {
+        //TODO
+    }
+    
+    /// download detail data
+    func downloadData() {
+        service.loadDetail { (success, errorMessage, result) in
+            print(errorMessage ?? "sucesso")
+        }
+    }
+    
 }

@@ -58,11 +58,16 @@ extension MainRouter {
 extension MainRouter: ListingRouter {
     
     func showDetail() {
+        let presenter = DetailPresenter()
         let controller = loadDetail()
+        
+        controller.presenter = presenter
+        presenter.viewProtocol = controller
+        
         pushViewController(controller, animated: true)
     }
     
-    fileprivate func loadDetail() -> UIViewController {
+    fileprivate func loadDetail() -> DetailController {
         let controller = StoryBoardInfo().instantiateDetailViewController()
         return controller
     }

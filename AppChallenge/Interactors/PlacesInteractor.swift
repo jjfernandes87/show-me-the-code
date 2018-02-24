@@ -31,6 +31,25 @@ class PlacesInteractor: NSObject {
         
     }
     
+    /// Load detail in Google Maps Web service
+    ///
+    /// - Parameter completion: result data
+    func loadDetail(completion: @escaping ((Bool, String?, CarRepair?) -> Void)) {
+        
+        let url = pathURL(tag: "detail")
+        let parameters : [String : Any]  = ["placeid" : "ChIJDSR7MTGuEmsR9-82GmIk__E", "key": key]
+        
+        let config = RequestConfig(url: url, method: .get, parameters: parameters)
+        ServiceAPI.request(config: config, success: { (result) in
+            guard let json = result else { return completion(false, "Parse error", nil) }
+            print("json: \(json)")
+            completion(true, nil, nil)
+        }) { (error, errorMessage) in
+            completion(false, errorMessage, nil)
+        }
+        
+    }
+    
     /// Get url by tag
     ///
     /// - Parameter tag: configuration.plist > scheme > endpoints > tag

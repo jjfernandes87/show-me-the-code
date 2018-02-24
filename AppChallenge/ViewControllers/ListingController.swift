@@ -20,21 +20,24 @@ class ListingController: UIBaseViewController {
     }
     
     override func downloadData(viewOccasion: DownloadOccasion) -> Bool {
-        if viewOccasion == .viewDidLoad {
+        if viewOccasion == .viewDidAppear {
             presenter.downloadData()
             return true
         }
         return false
     }
     
+    /// setViewStatus when result service equal zero
     func applyZeroResultView() {
         setViewStatus(status: .missResult, animated: true)
     }
     
+    /// setViewStatus when service conclude with errors
     func applyExceptionView() {
         setViewStatus(status: .exceptions, animated: true)
     }
     
+    /// setViewStatus when service conclude status code 200
     func applyPresentingView() {
         tableView.reloadData()
         setViewStatus(status: .presenting, animated: true)

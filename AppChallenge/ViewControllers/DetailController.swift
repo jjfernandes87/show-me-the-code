@@ -9,9 +9,20 @@
 import UIKit
 
 class DetailController: UIBaseViewController {
-
+    
+    var presenter: ViewControllerProtocols!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.viewDidLoad()
+    }
+    
+    override func downloadData(viewOccasion: DownloadOccasion) -> Bool {
+        if viewOccasion == .viewDidAppear {
+            presenter.downloadData()
+            return true
+        }
+        return false
     }
 
 }
