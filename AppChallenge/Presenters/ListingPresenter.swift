@@ -10,7 +10,7 @@ import UIKit
 
 class ListingPresenter: NSObject {
     
-    weak var viewProtocol: TableController?
+    weak var viewProtocol: ListingController?
     var router: ListingRouter?
     
     var service = (interactor: PlacesInteractor(), result: [CarRepair]() )

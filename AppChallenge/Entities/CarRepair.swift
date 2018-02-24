@@ -8,6 +8,7 @@
 
 import UIKit
 import Mapper
+import CoreLocation
 
 struct CarRepairCollection: Mappable {
     let collection: [CarRepair]
@@ -18,23 +19,27 @@ struct CarRepairCollection: Mappable {
 
 struct CarRepair: Mappable {
     
-    var icon: URL?
-    var id: String
-    var name: String
-    var rating: Int
-    var vicinity: String
+    let icon: URL
+    let id: String
+    let placeId: String
+    let name: String
+    let rating: Int
+    let vicinity: String
+    let location: CLLocationCoordinate2D
     
     init(map: Mapper) throws {
-        icon = map.optionalFrom("icon", transformation: extractURL)
-        id = try map.from("id")
-        name = try map.from("name")
-        rating = try map.from("rating")
-        vicinity = try map.from("vicinity")
+        try icon = map.from("icon", transformation: extractURL)
+        try id = map.from("id")
+        try placeId = map.from("place_id")
+        try name = map.from("name")
+        try rating = map.from("rating")
+        try vicinity = map.from("vicinity")
+        try location = map.from("geometry.location")
     }
 }
 
 func extractURL(object: Any?) throws -> URL {
     guard let path = object as? String else { throw MapperError.convertibleError(value: object, type: String.self) }
     if let pathURL = URL(string: path) { return pathURL }
-    throw MapperError.customError(field: nil, message: "Couldn't split the string!")
+    throw MapperError.customError(field: nil, message: "Couldn't create a url")
 }

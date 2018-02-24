@@ -1,5 +1,5 @@
 //
-//  TableControllerTests.swift
+//  ListingControllerTests.swift
 //  AppChallengeTests
 //
 //  Created by Julio Fernandes on 22/02/18.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import AppChallenge
 
-class TableControllerTests: XCTestCase {
+class ListingControllerTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -43,12 +43,12 @@ class TableControllerTests: XCTestCase {
 }
 
 // MARK: - Helper
-extension TableControllerTests {
-    fileprivate func loadViewController() -> TableController {
-        return TableControllerInfo().instantiateViewController()
+extension ListingControllerTests {
+    fileprivate func loadViewController() -> ListingController {
+        return ListingControllerInfo().instantiateViewController()
     }
     
-    fileprivate func runViewController(presenter: ListingPresenter) -> TableController {
+    fileprivate func runViewController(presenter: ListingPresenter) -> ListingController {
         let controller = loadViewController()
         controller.presenter = presenter
         _ = controller.view

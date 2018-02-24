@@ -17,7 +17,8 @@ class CairRepairTests: XCTestCase {
         "name": "Moses & Sons Smash Repairs",
         "place_id": "ChIJDSR7MTGuEmsR9-82GmIk__E",
         "rating": 5,
-        "vicinity": "192 Harris Street, Pyrmont"
+        "vicinity": "192 Harris Street, Pyrmont",
+        "geometry": ["location": [ "lat": -33.87054500000001, "lng": 151.194722] ]
     ]
     
     override func setUp() {

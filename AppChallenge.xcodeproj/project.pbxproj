@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		053B0A7F4D83A568F9942D17 /* Pods_AppChallenge_AppChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453E15F2D8EF73B442F1EA44 /* Pods_AppChallenge_AppChallengeTests.framework */; };
 		0544EFC5AD55EA2AF6CCA2F3 /* Pods_AppChallenge_AppChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71447D363F29A3A315A30E94 /* Pods_AppChallenge_AppChallengeUITests.framework */; };
+		8667C4EF20417EDC00D8E8A1 /* detail in Resources */ = {isa = PBXBuildFile; fileRef = 8667C4EE20417EDC00D8E8A1 /* detail */; };
+		8667C4F2204180BD00D8E8A1 /* CLLocationCoordinate2D+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8667C4F1204180BD00D8E8A1 /* CLLocationCoordinate2D+Helpers.swift */; };
 		867AF790203F5B3800F30818 /* MainRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867AF78F203F5B3800F30818 /* MainRouterTests.swift */; };
 		867AF792203F60C200F30818 /* ViewControllerInterfaceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867AF791203F60C200F30818 /* ViewControllerInterfaceProtocols.swift */; };
 		867AF794203F638C00F30818 /* ListingPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867AF793203F638C00F30818 /* ListingPresenterTests.swift */; };
 		867AF7A4203F783600F30818 /* UIBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867AF7A3203F783600F30818 /* UIBaseViewController.swift */; };
-		867AF7A6203F815400F30818 /* TableControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867AF7A5203F815400F30818 /* TableControllerTests.swift */; };
+		867AF7A6203F815400F30818 /* ListingControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867AF7A5203F815400F30818 /* ListingControllerTests.swift */; };
 		867AF7A8203F83D700F30818 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 867AF7A7203F83D700F30818 /* Configuration.plist */; };
 		867AF7AB203F873B00F30818 /* ServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867AF7AA203F873B00F30818 /* ServiceAPI.swift */; };
 		867AF7AD203F99D400F30818 /* CairRepairTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867AF7AC203F99D400F30818 /* CairRepairTests.swift */; };
@@ -24,7 +26,7 @@
 		8685EAFB203E3BA30038FE64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8685EAF9203E3BA30038FE64 /* LaunchScreen.storyboard */; };
 		8685EB06203E3BA30038FE64 /* AppChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8685EB05203E3BA30038FE64 /* AppChallengeTests.swift */; };
 		8685EB11203E3BA30038FE64 /* AppChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8685EB10203E3BA30038FE64 /* AppChallengeUITests.swift */; };
-		86AAE0B1203E411200B11662 /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AAE0B0203E411200B11662 /* TableController.swift */; };
+		86AAE0B1203E411200B11662 /* ListingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AAE0B0203E411200B11662 /* ListingController.swift */; };
 		86AAE0B3203E41B200B11662 /* PlacesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AAE0B2203E41B200B11662 /* PlacesInteractor.swift */; };
 		86AAE0B5203E41F400B11662 /* ListingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AAE0B4203E41F400B11662 /* ListingPresenter.swift */; };
 		86AAE0B7203E420300B11662 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AAE0B6203E420300B11662 /* DetailPresenter.swift */; };
@@ -34,8 +36,6 @@
 		86AAE0C7203E454A00B11662 /* Appfile in Resources */ = {isa = PBXBuildFile; fileRef = 86AAE0C4203E454A00B11662 /* Appfile */; };
 		86AAE0C8203E454A00B11662 /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = 86AAE0C5203E454A00B11662 /* Fastfile */; };
 		86AAE0C9203E454A00B11662 /* Snapfile in Resources */ = {isa = PBXBuildFile; fileRef = 86AAE0C6203E454A00B11662 /* Snapfile */; };
-		B98D509499D0A646E32C3DE6 /* Pods_AppChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E825E5B90A45BA19D4E173 /* Pods_AppChallengeTests.framework */; };
-		DEDCFB8A6FCFFEF065CC8F68 /* Pods_AppChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8033C6B80AFADBF0B6D0E7F /* Pods_AppChallengeUITests.framework */; };
 		FEB2EB773D8E5149C6211737 /* Pods_AppChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB9CDD66E5EE3F226DE5FF15 /* Pods_AppChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,11 +66,13 @@
 		5308EBF788BBF81B34C026CF /* Pods-AppChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppChallengeUITests/Pods-AppChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6590D3B889D5D1E1279F6F84 /* Pods-AppChallenge-AppChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppChallenge-AppChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppChallenge-AppChallengeTests/Pods-AppChallenge-AppChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		71447D363F29A3A315A30E94 /* Pods_AppChallenge_AppChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppChallenge_AppChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8667C4EE20417EDC00D8E8A1 /* detail */ = {isa = PBXFileReference; lastKnownFileType = text; path = detail; sourceTree = "<group>"; };
+		8667C4F1204180BD00D8E8A1 /* CLLocationCoordinate2D+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Helpers.swift"; sourceTree = "<group>"; };
 		867AF78F203F5B3800F30818 /* MainRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouterTests.swift; sourceTree = "<group>"; };
 		867AF791203F60C200F30818 /* ViewControllerInterfaceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInterfaceProtocols.swift; sourceTree = "<group>"; };
 		867AF793203F638C00F30818 /* ListingPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingPresenterTests.swift; sourceTree = "<group>"; };
 		867AF7A3203F783600F30818 /* UIBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBaseViewController.swift; sourceTree = "<group>"; };
-		867AF7A5203F815400F30818 /* TableControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableControllerTests.swift; sourceTree = "<group>"; };
+		867AF7A5203F815400F30818 /* ListingControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingControllerTests.swift; sourceTree = "<group>"; };
 		867AF7A7203F83D700F30818 /* Configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
 		867AF7AA203F873B00F30818 /* ServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAPI.swift; sourceTree = "<group>"; };
 		867AF7AC203F99D400F30818 /* CairRepairTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CairRepairTests.swift; sourceTree = "<group>"; };
@@ -87,7 +89,7 @@
 		8685EB0C203E3BA30038FE64 /* AppChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8685EB10203E3BA30038FE64 /* AppChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppChallengeUITests.swift; sourceTree = "<group>"; };
 		8685EB12203E3BA30038FE64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		86AAE0B0203E411200B11662 /* TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
+		86AAE0B0203E411200B11662 /* ListingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingController.swift; sourceTree = "<group>"; };
 		86AAE0B2203E41B200B11662 /* PlacesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesInteractor.swift; sourceTree = "<group>"; };
 		86AAE0B4203E41F400B11662 /* ListingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingPresenter.swift; sourceTree = "<group>"; };
 		86AAE0B6203E420300B11662 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
@@ -118,7 +120,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B98D509499D0A646E32C3DE6 /* Pods_AppChallengeTests.framework in Frameworks */,
 				053B0A7F4D83A568F9942D17 /* Pods_AppChallenge_AppChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,7 +128,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEDCFB8A6FCFFEF065CC8F68 /* Pods_AppChallengeUITests.framework in Frameworks */,
 				0544EFC5AD55EA2AF6CCA2F3 /* Pods_AppChallenge_AppChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,9 +147,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8667C4F02041809C00D8E8A1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8667C4F1204180BD00D8E8A1 /* CLLocationCoordinate2D+Helpers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		867AF797203F754F00F30818 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				8667C4F02041809C00D8E8A1 /* Extensions */,
 				867AF7A9203F872A00F30818 /* Service */,
 				867AF798203F756500F30818 /* UIBaseViewController */,
 			);
@@ -176,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				867AF7B1203FA5E300F30818 /* listing */,
+				8667C4EE20417EDC00D8E8A1 /* detail */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -227,7 +237,7 @@
 				8685EB05203E3BA30038FE64 /* AppChallengeTests.swift */,
 				867AF78F203F5B3800F30818 /* MainRouterTests.swift */,
 				867AF793203F638C00F30818 /* ListingPresenterTests.swift */,
-				867AF7A5203F815400F30818 /* TableControllerTests.swift */,
+				867AF7A5203F815400F30818 /* ListingControllerTests.swift */,
 				867AF7AC203F99D400F30818 /* CairRepairTests.swift */,
 			);
 			path = AppChallengeTests;
@@ -246,7 +256,7 @@
 		86AAE0A8203E3F7B00B11662 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				86AAE0B0203E411200B11662 /* TableController.swift */,
+				86AAE0B0203E411200B11662 /* ListingController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -297,8 +307,8 @@
 		86AAE0AF203E407000B11662 /* ApplicationBase */ = {
 			isa = PBXGroup;
 			children = (
-				8685EAFC203E3BA30038FE64 /* Info.plist */,
 				8685EAF0203E3BA30038FE64 /* AppDelegate.swift */,
+				8685EAFC203E3BA30038FE64 /* Info.plist */,
 				867AF7A7203F83D700F30818 /* Configuration.plist */,
 			);
 			name = ApplicationBase;
@@ -450,6 +460,7 @@
 				8685EAFB203E3BA30038FE64 /* LaunchScreen.storyboard in Resources */,
 				867AF7A8203F83D700F30818 /* Configuration.plist in Resources */,
 				867AF7B2203FA5E300F30818 /* listing in Resources */,
+				8667C4EF20417EDC00D8E8A1 /* detail in Resources */,
 				8685EAF8203E3BA30038FE64 /* Assets.xcassets in Resources */,
 				8685EAF6203E3BA30038FE64 /* Main.storyboard in Resources */,
 			);
@@ -653,8 +664,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8667C4F2204180BD00D8E8A1 /* CLLocationCoordinate2D+Helpers.swift in Sources */,
 				867AF7AB203F873B00F30818 /* ServiceAPI.swift in Sources */,
-				86AAE0B1203E411200B11662 /* TableController.swift in Sources */,
+				86AAE0B1203E411200B11662 /* ListingController.swift in Sources */,
 				86AAE0BC203E422C00B11662 /* MainRouter.swift in Sources */,
 				86AAE0B3203E41B200B11662 /* PlacesInteractor.swift in Sources */,
 				86AAE0B9203E420D00B11662 /* CarRepair.swift in Sources */,
@@ -670,7 +682,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				867AF7A6203F815400F30818 /* TableControllerTests.swift in Sources */,
+				867AF7A6203F815400F30818 /* ListingControllerTests.swift in Sources */,
 				867AF794203F638C00F30818 /* ListingPresenterTests.swift in Sources */,
 				867AF7AD203F99D400F30818 /* CairRepairTests.swift in Sources */,
 				8685EB06203E3BA30038FE64 /* AppChallengeTests.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  TableController.swift
+//  ListingController.swift
 //  AppChallenge
 //
 //  Created by Julio Fernandes on 21/02/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableController: UIBaseViewController {
+class ListingController: UIBaseViewController {
 
     var presenter: ViewControllerInterfaceProtocols!
     

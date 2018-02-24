@@ -55,11 +55,11 @@ class ListingPresenterTests: XCTestCase {
 
 // MARK: - Helper
 extension ListingPresenterTests {
-    fileprivate func loadViewController() -> TableController {
-        return TableControllerInfo().instantiateViewController()
+    fileprivate func loadViewController() -> ListingController {
+        return ListingControllerInfo().instantiateViewController()
     }
     
-    fileprivate func runViewController(presenter: ListingPresenter) -> TableController {
+    fileprivate func runViewController(presenter: ListingPresenter) -> ListingController {
         let controller = loadViewController()
         controller.presenter = presenter
         _ = controller.view
