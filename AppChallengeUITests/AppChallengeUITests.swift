@@ -12,7 +12,6 @@ class AppChallengeUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
-        
         continueAfterFailure = false
         
         let app = XCUIApplication()
@@ -25,7 +24,9 @@ class AppChallengeUITests: XCTestCase {
     }
     
     func testExample() {
-        snapshot("0Launch")
+        let app = XCUIApplication()
+        XCTAssertTrue(app.staticTexts["Moses & Sons Smash Repairs 2"].exists)
+        snapshot("0Listing")
     }
     
 }
