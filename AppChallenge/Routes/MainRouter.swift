@@ -8,28 +8,61 @@
 
 import UIKit
 
-class MainRouter: UINavigationController {
+protocol ListingRouter {
+    func showDetail()
+}
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+struct TableControllerInfo {
+    let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+    func instantiateViewController() -> TableController {
+        return mainStoryBoard.instantiateViewController(withIdentifier: "TableController") as! TableController
+        
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+class MainRouter: UINavigationController {
+    
+    var window: UIWindow?
+    
+    convenience init(window: UIWindow?) {
+        self.init()
+        self.window = window
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    /// Launch navigation with car repair listing
+    func launch() {
+        viewControllers = [loadListing()]
+        window?.rootViewController = self
     }
-    */
+    
+}
 
+// MARK: - Listing methods
+extension MainRouter {
+    fileprivate func loadListing() -> UIViewController {
+        
+        let presenter = ListingPresenter()
+        let controller = TableControllerInfo().instantiateViewController()
+        
+        controller.presenter = presenter
+        presenter.viewProtocol = controller
+        presenter.router = self
+        
+        return controller
+    }
+}
+
+// MARK: - DetailRouter methods
+extension MainRouter: ListingRouter {
+    
+    func showDetail() {
+        let controller = loadDetail()
+        pushViewController(controller, animated: true)
+    }
+    
+    fileprivate func loadDetail() -> UIViewController {
+        let controller = TableControllerInfo().instantiateViewController()
+        return controller
+    }
+    
 }
