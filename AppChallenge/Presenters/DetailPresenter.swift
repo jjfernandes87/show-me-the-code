@@ -13,6 +13,12 @@ class DetailPresenter: NSObject {
     weak var viewProtocol: DetailController?
     
     var service = PlacesInteractor()
+    var placeId: String
+    
+    init(id: String) {
+        placeId = id
+        super.init()
+    }
 }
 
 extension DetailPresenter: ViewControllerProtocols {
@@ -23,7 +29,7 @@ extension DetailPresenter: ViewControllerProtocols {
     
     /// download detail data
     func downloadData() {
-        service.loadDetail { (success, errorMessage, result) in
+        service.loadDetail(placeId: placeId) { (success, errorMessage, result) in
             print(errorMessage ?? "sucesso")
         }
     }

@@ -4,6 +4,8 @@
 <dict>
 	<key>debug</key>
 	<dict>
+		<key>googleAPIKEY</key>
+		<string>AIzaSyCxmDvGnuO7NXfGt-DiviuxOZOwYDgnqPc</string>
 		<key>endpoints</key>
 		<dict>
 			<key>listing</key>
@@ -14,6 +16,8 @@
 	</dict>
 	<key>release</key>
 	<dict>
+		<key>googleAPIKEY</key>
+		<string>AIzaSyCxmDvGnuO7NXfGt-DiviuxOZOwYDgnqPc</string>
 		<key>endpoints</key>
 		<dict>
 			<key>listing</key>

@@ -25,7 +25,7 @@ class AppChallengeUITests: XCTestCase {
     
     func testListing() {
         let app = XCUIApplication()
-        XCTAssertTrue(app.staticTexts["Moses & Sons Smash Repairs 2"].exists)
+        XCTAssertTrue(app.staticTexts["DG Baterias"].exists)
         XCTAssertTrue(app.navigationBars["Listing"].exists)
         snapshot("0Listing")
     }
@@ -34,7 +34,7 @@ class AppChallengeUITests: XCTestCase {
         let app = XCUIApplication()
         let tableQuery = app.tables
         tableQuery.cells.element(boundBy: 0).tap()
-        XCTAssertFalse(app.staticTexts["Moses & Sons Smash Repairs 2"].exists)
+        XCTAssertFalse(app.staticTexts["DG Baterias"].exists)
     }
     
     func testDetail() {

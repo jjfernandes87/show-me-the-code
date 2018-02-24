@@ -9,7 +9,7 @@
 import UIKit
 
 protocol ListingRouter {
-    func showDetail()
+    func showDetail(placeId: String)
 }
 
 struct StoryBoardInfo {
@@ -57,8 +57,8 @@ extension MainRouter {
 // MARK: - DetailRouter methods
 extension MainRouter: ListingRouter {
     
-    func showDetail() {
-        let presenter = DetailPresenter()
+    func showDetail(placeId: String) {
+        let presenter = DetailPresenter(id: placeId)
         let controller = loadDetail()
         
         controller.presenter = presenter
