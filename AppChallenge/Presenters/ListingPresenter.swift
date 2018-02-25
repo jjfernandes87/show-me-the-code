@@ -22,6 +22,8 @@ extension ListingPresenter: ViewControllerProtocols {
     /// setup presenter
     func viewDidLoad() {
         guard let controller = viewProtocol else { return }
+        controller.tableView.rowHeight = UITableViewAutomaticDimension
+        controller.tableView.estimatedRowHeight = 100
         controller.tableView.dataSource = self
         controller.tableView.delegate = self
     }
@@ -51,8 +53,8 @@ extension ListingPresenter: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = service.result[indexPath.row].name
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell", for: indexPath) as! CardCell
+        cell.setContent(card: service.result[indexPath.row])
         return cell
     }
     

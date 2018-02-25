@@ -40,6 +40,8 @@
 		86AAE0C8203E454A00B11662 /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = 86AAE0C5203E454A00B11662 /* Fastfile */; };
 		86AAE0C9203E454A00B11662 /* Snapfile in Resources */ = {isa = PBXBuildFile; fileRef = 86AAE0C6203E454A00B11662 /* Snapfile */; };
 		86EAB5122041ADA20078594C /* DetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EAB5112041ADA20078594C /* DetailPresenterTests.swift */; };
+		86FD3B8520421D070074D58C /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FD3B8420421D070074D58C /* CardCell.swift */; };
+		86FD3B8720422DEF0074D58C /* ListingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FD3B8620422DEF0074D58C /* ListingUITests.swift */; };
 		FEB2EB773D8E5149C6211737 /* Pods_AppChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB9CDD66E5EE3F226DE5FF15 /* Pods_AppChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +111,8 @@
 		86AAE0C5203E454A00B11662 /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Fastfile; path = fastlane/Fastfile; sourceTree = "<group>"; };
 		86AAE0C6203E454A00B11662 /* Snapfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Snapfile; path = fastlane/Snapfile; sourceTree = "<group>"; };
 		86EAB5112041ADA20078594C /* DetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenterTests.swift; sourceTree = "<group>"; };
+		86FD3B8420421D070074D58C /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		86FD3B8620422DEF0074D58C /* ListingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingUITests.swift; sourceTree = "<group>"; };
 		8F859F90E9FB5FF86F09D52C /* Pods-AppChallenge-AppChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppChallenge-AppChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppChallenge-AppChallengeUITests/Pods-AppChallenge-AppChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		99D954A1B59A8826EC530365 /* Pods-AppChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppChallenge/Pods-AppChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		A03E7AF21374951B03355AEA /* Pods-AppChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppChallengeTests/Pods-AppChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +172,7 @@
 		867AF797203F754F00F30818 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				86FD3B8320421CE90074D58C /* Cells */,
 				8667C4F02041809C00D8E8A1 /* Extensions */,
 				867AF7A9203F872A00F30818 /* Service */,
 				867AF798203F756500F30818 /* UIBaseViewController */,
@@ -261,6 +266,7 @@
 			children = (
 				86AAE0BD203E43F600B11662 /* SnapshotHelper.swift */,
 				8685EB10203E3BA30038FE64 /* AppChallengeUITests.swift */,
+				86FD3B8620422DEF0074D58C /* ListingUITests.swift */,
 				8685EB12203E3BA30038FE64 /* Info.plist */,
 			);
 			path = AppChallengeUITests;
@@ -338,6 +344,14 @@
 				86AAE0C6203E454A00B11662 /* Snapfile */,
 			);
 			name = Documentation;
+			sourceTree = "<group>";
+		};
+		86FD3B8320421CE90074D58C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				86FD3B8420421D070074D58C /* CardCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		B9CC12575C8D023677159C73 /* Pods */ = {
@@ -685,6 +699,7 @@
 				86AAE0B1203E411200B11662 /* ListingController.swift in Sources */,
 				86AAE0BC203E422C00B11662 /* MainRouter.swift in Sources */,
 				8667C4F42041840300D8E8A1 /* DetailController.swift in Sources */,
+				86FD3B8520421D070074D58C /* CardCell.swift in Sources */,
 				86AAE0B3203E41B200B11662 /* PlacesInteractor.swift in Sources */,
 				8667C4FC2041A0B800D8E8A1 /* CardRepair.swift in Sources */,
 				86AAE0B9203E420D00B11662 /* CarRepairCard.swift in Sources */,
@@ -715,6 +730,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8685EB11203E3BA30038FE64 /* AppChallengeUITests.swift in Sources */,
+				86FD3B8720422DEF0074D58C /* ListingUITests.swift in Sources */,
 				86AAE0BE203E43F600B11662 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

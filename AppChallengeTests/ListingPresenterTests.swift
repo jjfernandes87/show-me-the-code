@@ -11,6 +11,16 @@ import XCTest
 
 class ListingPresenterTests: XCTestCase {
     
+    let carRepairCardDict: NSDictionary = [
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+        "id": "2f50bbfae132abbb07fa184cb826e1d29555cb53",
+        "name": "Moses & Sons Smash Repairs",
+        "place_id": "ChIJDSR7MTGuEmsR9-82GmIk__E",
+        "rating": 5,
+        "vicinity": "192 Harris Street, Pyrmont",
+        "geometry": ["location": [ "lat": -33.87054500000001, "lng": 151.194722] ]
+    ]
+    
     override func setUp() {
         super.setUp()
     }
@@ -53,6 +63,31 @@ class ListingPresenterTests: XCTestCase {
         XCTAssertNotNil(controller.tableView.dataSource, "Tableview assigned datasource")
         XCTAssertNotNil(controller.tableView.delegate, "Tableview assigned delegate")
     }
+    
+    func testTableViewCount() {
+        let response = CarRepairCard.from(carRepairCardDict)
+        XCTAssertNotNil(response)
+        
+        let presenter = ListingPresenter()
+        let controller = runViewController(presenter: presenter, item: [response!])
+        XCTAssertEqual(controller.tableView.numberOfRows(inSection: 0), 1, "TableView numberOfRows count")
+    }
+    
+    func testTableViewCell() {
+        let response = CarRepairCard.from(carRepairCardDict)
+        XCTAssertNotNil(response)
+        
+        let presenter = ListingPresenter()
+        let controller = runViewController(presenter: presenter, item: [response!])
+        XCTAssertEqual(controller.tableView.numberOfRows(inSection: 0), 1, "TableView numberOfRows count")
+        
+        let cell = controller.tableView.cellForRow(at: IndexPath(row: 0, section: 0))
+        XCTAssertNotNil(cell)
+        XCTAssertTrue(cell is CardCell)
+        XCTAssertEqual((cell as! CardCell).ratingValue.textColor, UIColor.green)
+        XCTAssertEqual((cell as! CardCell).name.text, "Moses & Sons Smash Repairs")
+    }
+    
 }
 
 // MARK: - Helper
@@ -63,6 +98,15 @@ extension ListingPresenterTests {
     
     fileprivate func runViewController(presenter: ListingPresenter) -> ListingController {
         let controller = loadViewController()
+        controller.presenter = presenter
+        _ = controller.view
+        return controller
+    }
+    
+    fileprivate func runViewController(presenter: ListingPresenter, item: [CarRepairCard]) -> ListingController {
+        let controller = loadViewController()
+        presenter.reloadData(result: item)
+        presenter.viewProtocol = controller
         controller.presenter = presenter
         _ = controller.view
         return controller
