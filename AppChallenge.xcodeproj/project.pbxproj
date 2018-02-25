@@ -34,6 +34,7 @@
 		867AF7AB203F873B00F30818 /* ServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867AF7AA203F873B00F30818 /* ServiceAPI.swift */; };
 		867AF7AD203F99D400F30818 /* CairRepairTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867AF7AC203F99D400F30818 /* CairRepairTests.swift */; };
 		867AF7B2203FA5E300F30818 /* listing in Resources */ = {isa = PBXBuildFile; fileRef = 867AF7B1203FA5E300F30818 /* listing */; };
+		867CA98A20436DC7005889A4 /* UIViewController+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867CA98920436DC7005889A4 /* UIViewController+Helpers.swift */; };
 		8685EAF1203E3BA30038FE64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8685EAF0203E3BA30038FE64 /* AppDelegate.swift */; };
 		8685EAF6203E3BA30038FE64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8685EAF4203E3BA30038FE64 /* Main.storyboard */; };
 		8685EAF8203E3BA30038FE64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8685EAF7203E3BA30038FE64 /* Assets.xcassets */; };
@@ -110,6 +111,7 @@
 		867AF7AA203F873B00F30818 /* ServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAPI.swift; sourceTree = "<group>"; };
 		867AF7AC203F99D400F30818 /* CairRepairTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CairRepairTests.swift; sourceTree = "<group>"; };
 		867AF7B1203FA5E300F30818 /* listing */ = {isa = PBXFileReference; explicitFileType = text.json; path = listing; sourceTree = "<group>"; };
+		867CA98920436DC7005889A4 /* UIViewController+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Helpers.swift"; sourceTree = "<group>"; };
 		8685EAED203E3BA30038FE64 /* AppChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8685EAF0203E3BA30038FE64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8685EAF5203E3BA30038FE64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 			children = (
 				8667C4F1204180BD00D8E8A1 /* CLLocationCoordinate2D+Helpers.swift */,
 				86DD84E2204351EE005F25CE /* String+Helpers.swift */,
+				867CA98920436DC7005889A4 /* UIViewController+Helpers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -752,6 +755,7 @@
 				86AAE0BC203E422C00B11662 /* MainRouter.swift in Sources */,
 				8667C4F42041840300D8E8A1 /* DetailController.swift in Sources */,
 				86FD3B8520421D070074D58C /* CardCell.swift in Sources */,
+				867CA98A20436DC7005889A4 /* UIViewController+Helpers.swift in Sources */,
 				86AAE0B3203E41B200B11662 /* PlacesInteractor.swift in Sources */,
 				864AA38120430EDB00840E62 /* TableViewManager.swift in Sources */,
 				8667C4FC2041A0B800D8E8A1 /* CardRepair.swift in Sources */,
