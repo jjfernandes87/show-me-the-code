@@ -49,6 +49,7 @@
 		86AAE0C7203E454A00B11662 /* Appfile in Resources */ = {isa = PBXBuildFile; fileRef = 86AAE0C4203E454A00B11662 /* Appfile */; };
 		86AAE0C8203E454A00B11662 /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = 86AAE0C5203E454A00B11662 /* Fastfile */; };
 		86AAE0C9203E454A00B11662 /* Snapfile in Resources */ = {isa = PBXBuildFile; fileRef = 86AAE0C6203E454A00B11662 /* Snapfile */; };
+		86DD84E3204351EE005F25CE /* String+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DD84E2204351EE005F25CE /* String+Helpers.swift */; };
 		86EAB5122041ADA20078594C /* DetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EAB5112041ADA20078594C /* DetailPresenterTests.swift */; };
 		86FD3B8520421D070074D58C /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FD3B8420421D070074D58C /* CardCell.swift */; };
 		86FD3B8720422DEF0074D58C /* ListingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FD3B8620422DEF0074D58C /* ListingUITests.swift */; };
@@ -130,6 +131,7 @@
 		86AAE0C4203E454A00B11662 /* Appfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Appfile; path = fastlane/Appfile; sourceTree = "<group>"; };
 		86AAE0C5203E454A00B11662 /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Fastfile; path = fastlane/Fastfile; sourceTree = "<group>"; };
 		86AAE0C6203E454A00B11662 /* Snapfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Snapfile; path = fastlane/Snapfile; sourceTree = "<group>"; };
+		86DD84E2204351EE005F25CE /* String+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Helpers.swift"; sourceTree = "<group>"; };
 		86EAB5112041ADA20078594C /* DetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenterTests.swift; sourceTree = "<group>"; };
 		86FD3B8420421D070074D58C /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		86FD3B8620422DEF0074D58C /* ListingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingUITests.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				8667C4F1204180BD00D8E8A1 /* CLLocationCoordinate2D+Helpers.swift */,
+				86DD84E2204351EE005F25CE /* String+Helpers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -761,6 +764,7 @@
 				86AAE0B5203E41F400B11662 /* ListingPresenter.swift in Sources */,
 				864AA3752042FB8100840E62 /* ReviewAddressCell.swift in Sources */,
 				867AF792203F60C200F30818 /* ViewControllerProtocols.swift in Sources */,
+				86DD84E3204351EE005F25CE /* String+Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

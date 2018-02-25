@@ -14,10 +14,26 @@ class DetailPresenter: NSObject {
     
     var service = PlacesInteractor()
     var placeId: String
+    var number = ""
     
     init(id: String) {
         placeId = id
         super.init()
+    }
+    
+    /// Add UIBarButtonItem
+    internal func phoneBarButton(phone: String) {
+        guard let controller = viewProtocol else { return }
+        self.number = phone
+        controller.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "phone"),
+                                                                       style: .done,
+                                                                       target: self,
+                                                                       action: #selector(calling))
+    }
+    
+    /// Call action
+    @objc func calling() {
+        self.number.makeACall()
     }
 }
 
@@ -46,11 +62,16 @@ extension DetailPresenter: ViewControllerProtocols {
         controller.applyPresentingView()
     }
     
+    /// Load cells
+    ///
+    /// - Parameter data: carRepair
+    /// - Returns: lists of cells
     internal func loadCells(data: CarRepair) -> [AnyObject] {
         var rows = [AnyObject]()
         rows.append(ReviewAddressCell(head: "Address", description: data.formattedAddress))
         
         if let phone = data.internationalPhoneNumber {
+            phoneBarButton(phone: phone)
             rows.append(ReviewAddressCell(head: "Phone", description: phone))
         }
         
