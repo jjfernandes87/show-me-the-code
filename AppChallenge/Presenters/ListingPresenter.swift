@@ -21,11 +21,16 @@ extension ListingPresenter: ViewControllerProtocols {
     
     /// setup presenter
     func viewDidLoad() {
+        onboarding()
         guard let controller = viewProtocol else { return }
         controller.tableView.rowHeight = UITableViewAutomaticDimension
         controller.tableView.estimatedRowHeight = 100
         controller.tableView.dataSource = self
         controller.tableView.delegate = self
+    }
+    
+    fileprivate func onboarding() {
+        router?.showOnBoarding()
     }
     
     /// download listing data

@@ -35,6 +35,7 @@
 		867AF7AD203F99D400F30818 /* CairRepairTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867AF7AC203F99D400F30818 /* CairRepairTests.swift */; };
 		867AF7B2203FA5E300F30818 /* listing in Resources */ = {isa = PBXBuildFile; fileRef = 867AF7B1203FA5E300F30818 /* listing */; };
 		867CA98A20436DC7005889A4 /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867CA98920436DC7005889A4 /* NetworkStatus.swift */; };
+		867CA98C204377B1005889A4 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867CA98B204377B1005889A4 /* OnboardingController.swift */; };
 		8685EAF1203E3BA30038FE64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8685EAF0203E3BA30038FE64 /* AppDelegate.swift */; };
 		8685EAF6203E3BA30038FE64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8685EAF4203E3BA30038FE64 /* Main.storyboard */; };
 		8685EAF8203E3BA30038FE64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8685EAF7203E3BA30038FE64 /* Assets.xcassets */; };
@@ -111,6 +112,7 @@
 		867AF7AC203F99D400F30818 /* CairRepairTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CairRepairTests.swift; sourceTree = "<group>"; };
 		867AF7B1203FA5E300F30818 /* listing */ = {isa = PBXFileReference; explicitFileType = text.json; path = listing; sourceTree = "<group>"; };
 		867CA98920436DC7005889A4 /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
+		867CA98B204377B1005889A4 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		8685EAED203E3BA30038FE64 /* AppChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8685EAF0203E3BA30038FE64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8685EAF5203E3BA30038FE64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -315,6 +317,7 @@
 			children = (
 				86AAE0B0203E411200B11662 /* ListingController.swift */,
 				8667C4F32041840300D8E8A1 /* DetailController.swift */,
+				867CA98B204377B1005889A4 /* OnboardingController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -746,6 +749,7 @@
 			files = (
 				8667C4F2204180BD00D8E8A1 /* CLLocationCoordinate2D+Helpers.swift in Sources */,
 				867AF7AB203F873B00F30818 /* ServiceAPI.swift in Sources */,
+				867CA98C204377B1005889A4 /* OnboardingController.swift in Sources */,
 				864AA38220430EDB00840E62 /* TableViewManagerCache.swift in Sources */,
 				86AAE0B1203E411200B11662 /* ListingController.swift in Sources */,
 				864AA3772042FB9000840E62 /* ReviewRatingsCell.swift in Sources */,
