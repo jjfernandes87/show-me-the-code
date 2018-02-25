@@ -11,15 +11,7 @@ import XCTest
 
 class ListingPresenterTests: XCTestCase {
     
-    let carRepairCardDict: NSDictionary = [
-        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
-        "id": "2f50bbfae132abbb07fa184cb826e1d29555cb53",
-        "name": "Moses & Sons Smash Repairs",
-        "place_id": "ChIJDSR7MTGuEmsR9-82GmIk__E",
-        "rating": 5,
-        "vicinity": "192 Harris Street, Pyrmont",
-        "geometry": ["location": [ "lat": -33.87054500000001, "lng": 151.194722] ]
-    ]
+    let mock = JsonMock()
     
     override func setUp() {
         super.setUp()
@@ -65,7 +57,7 @@ class ListingPresenterTests: XCTestCase {
     }
     
     func testTableViewCount() {
-        let response = CarRepairCard.from(carRepairCardDict)
+        let response = CarRepairCard.from(mock.carRepairCardDict)
         XCTAssertNotNil(response)
         
         let presenter = ListingPresenter()
@@ -74,7 +66,7 @@ class ListingPresenterTests: XCTestCase {
     }
     
     func testTableViewCell() {
-        let response = CarRepairCard.from(carRepairCardDict)
+        let response = CarRepairCard.from(mock.carRepairCardDict)
         XCTAssertNotNil(response)
         
         let presenter = ListingPresenter()

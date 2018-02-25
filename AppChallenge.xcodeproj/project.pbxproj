@@ -17,6 +17,9 @@
 		864AA3862043336100840E62 /* UIBaseViewController+loading.xib in Resources */ = {isa = PBXBuildFile; fileRef = 864AA3832043336100840E62 /* UIBaseViewController+loading.xib */; };
 		864AA3872043336100840E62 /* UIBaseViewController+network.xib in Resources */ = {isa = PBXBuildFile; fileRef = 864AA3842043336100840E62 /* UIBaseViewController+network.xib */; };
 		864AA3882043336100840E62 /* UIBaseViewController+exceptions.xib in Resources */ = {isa = PBXBuildFile; fileRef = 864AA3852043336100840E62 /* UIBaseViewController+exceptions.xib */; };
+		864AA38A20433EC000840E62 /* DetailControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864AA38920433EC000840E62 /* DetailControllerTests.swift */; };
+		864AA38C204340C400840E62 /* JsonMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864AA38B204340C400840E62 /* JsonMock.swift */; };
+		864AA38E2043443700840E62 /* DetailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864AA38D2043443700840E62 /* DetailUITests.swift */; };
 		8667C4EF20417EDC00D8E8A1 /* detail in Resources */ = {isa = PBXBuildFile; fileRef = 8667C4EE20417EDC00D8E8A1 /* detail */; };
 		8667C4F2204180BD00D8E8A1 /* CLLocationCoordinate2D+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8667C4F1204180BD00D8E8A1 /* CLLocationCoordinate2D+Helpers.swift */; };
 		8667C4F42041840300D8E8A1 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8667C4F32041840300D8E8A1 /* DetailController.swift */; };
@@ -35,7 +38,6 @@
 		8685EAF6203E3BA30038FE64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8685EAF4203E3BA30038FE64 /* Main.storyboard */; };
 		8685EAF8203E3BA30038FE64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8685EAF7203E3BA30038FE64 /* Assets.xcassets */; };
 		8685EAFB203E3BA30038FE64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8685EAF9203E3BA30038FE64 /* LaunchScreen.storyboard */; };
-		8685EB06203E3BA30038FE64 /* AppChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8685EB05203E3BA30038FE64 /* AppChallengeTests.swift */; };
 		8685EB11203E3BA30038FE64 /* AppChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8685EB10203E3BA30038FE64 /* AppChallengeUITests.swift */; };
 		86AAE0B1203E411200B11662 /* ListingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AAE0B0203E411200B11662 /* ListingController.swift */; };
 		86AAE0B3203E41B200B11662 /* PlacesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AAE0B2203E41B200B11662 /* PlacesInteractor.swift */; };
@@ -88,6 +90,9 @@
 		864AA3832043336100840E62 /* UIBaseViewController+loading.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "UIBaseViewController+loading.xib"; sourceTree = "<group>"; };
 		864AA3842043336100840E62 /* UIBaseViewController+network.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "UIBaseViewController+network.xib"; sourceTree = "<group>"; };
 		864AA3852043336100840E62 /* UIBaseViewController+exceptions.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "UIBaseViewController+exceptions.xib"; sourceTree = "<group>"; };
+		864AA38920433EC000840E62 /* DetailControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailControllerTests.swift; sourceTree = "<group>"; };
+		864AA38B204340C400840E62 /* JsonMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonMock.swift; sourceTree = "<group>"; };
+		864AA38D2043443700840E62 /* DetailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUITests.swift; sourceTree = "<group>"; };
 		8667C4EE20417EDC00D8E8A1 /* detail */ = {isa = PBXFileReference; explicitFileType = text.json; path = detail; sourceTree = "<group>"; };
 		8667C4F1204180BD00D8E8A1 /* CLLocationCoordinate2D+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Helpers.swift"; sourceTree = "<group>"; };
 		8667C4F32041840300D8E8A1 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
@@ -111,7 +116,6 @@
 		8685EAFA203E3BA30038FE64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8685EAFC203E3BA30038FE64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8685EB01203E3BA30038FE64 /* AppChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8685EB05203E3BA30038FE64 /* AppChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppChallengeTests.swift; sourceTree = "<group>"; };
 		8685EB07203E3BA30038FE64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8685EB0C203E3BA30038FE64 /* AppChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8685EB10203E3BA30038FE64 /* AppChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppChallengeUITests.swift; sourceTree = "<group>"; };
@@ -280,12 +284,13 @@
 			isa = PBXGroup;
 			children = (
 				8685EB07203E3BA30038FE64 /* Info.plist */,
-				8685EB05203E3BA30038FE64 /* AppChallengeTests.swift */,
 				867AF78F203F5B3800F30818 /* MainRouterTests.swift */,
 				867AF793203F638C00F30818 /* ListingPresenterTests.swift */,
 				867AF7A5203F815400F30818 /* ListingControllerTests.swift */,
 				867AF7AC203F99D400F30818 /* CairRepairTests.swift */,
 				86EAB5112041ADA20078594C /* DetailPresenterTests.swift */,
+				864AA38920433EC000840E62 /* DetailControllerTests.swift */,
+				864AA38B204340C400840E62 /* JsonMock.swift */,
 			);
 			path = AppChallengeTests;
 			sourceTree = "<group>";
@@ -293,10 +298,11 @@
 		8685EB0F203E3BA30038FE64 /* AppChallengeUITests */ = {
 			isa = PBXGroup;
 			children = (
+				8685EB12203E3BA30038FE64 /* Info.plist */,
 				86AAE0BD203E43F600B11662 /* SnapshotHelper.swift */,
 				8685EB10203E3BA30038FE64 /* AppChallengeUITests.swift */,
 				86FD3B8620422DEF0074D58C /* ListingUITests.swift */,
-				8685EB12203E3BA30038FE64 /* Info.plist */,
+				864AA38D2043443700840E62 /* DetailUITests.swift */,
 			);
 			path = AppChallengeUITests;
 			sourceTree = "<group>";
@@ -764,9 +770,10 @@
 			files = (
 				867AF7A6203F815400F30818 /* ListingControllerTests.swift in Sources */,
 				867AF794203F638C00F30818 /* ListingPresenterTests.swift in Sources */,
+				864AA38A20433EC000840E62 /* DetailControllerTests.swift in Sources */,
+				864AA38C204340C400840E62 /* JsonMock.swift in Sources */,
 				867AF7AD203F99D400F30818 /* CairRepairTests.swift in Sources */,
 				86EAB5122041ADA20078594C /* DetailPresenterTests.swift in Sources */,
-				8685EB06203E3BA30038FE64 /* AppChallengeTests.swift in Sources */,
 				867AF790203F5B3800F30818 /* MainRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -777,6 +784,7 @@
 			files = (
 				8685EB11203E3BA30038FE64 /* AppChallengeUITests.swift in Sources */,
 				86FD3B8720422DEF0074D58C /* ListingUITests.swift in Sources */,
+				864AA38E2043443700840E62 /* DetailUITests.swift in Sources */,
 				86AAE0BE203E43F600B11662 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
