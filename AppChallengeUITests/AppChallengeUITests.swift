@@ -41,7 +41,7 @@ class AppChallengeUITests: XCTestCase {
         let app = XCUIApplication()
         let tableQuery = app.tables
         tableQuery.cells.element(boundBy: 0).tap()
-        XCTAssertTrue(app.navigationBars["Detail"].exists)
+        XCTAssertTrue(app.navigationBars["Moses & Sons Smash Repairs"].exists)
         snapshot("1Detail")
     }
 }

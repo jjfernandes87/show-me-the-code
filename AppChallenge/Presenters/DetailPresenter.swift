@@ -24,14 +24,46 @@ class DetailPresenter: NSObject {
 extension DetailPresenter: ViewControllerProtocols {
     
     func viewDidLoad() {
-        //TODO
+        guard let controller = viewProtocol else { return }
+        controller.navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     /// download detail data
     func downloadData() {
         service.loadDetail(placeId: placeId) { (success, errorMessage, result) in
-            print(errorMessage ?? "sucesso")
+            guard let data = result else { self.viewProtocol?.applyExceptionView(); return }
+            DispatchQueue.main.async { self.updateUI(data: data) }
         }
     }
     
+    /// Update ui
+    ///
+    /// - Parameter data: car repair
+    internal func updateUI(data: CarRepair) {
+        guard let controller = viewProtocol else { return }
+        controller.title = data.name
+        controller.tableView.rows = loadCells(data: data)
+        controller.applyPresentingView()
+    }
+    
+    internal func loadCells(data: CarRepair) -> [AnyObject] {
+        var rows = [AnyObject]()
+        rows.append(ReviewAddressCell(head: "Address", description: data.formattedAddress))
+        
+        if let phone = data.internationalPhoneNumber {
+            rows.append(ReviewAddressCell(head: "Phone", description: phone))
+        }
+        
+        rows.append(ReviewAddressCell(head: "Vicinity", description: data.vicinity))
+        rows.append(ReviewRatingsCell(card: data))
+        
+        for review in data.reviews {
+            if let text = review.text, text.count > 0 {
+                rows.append(ReviewTextCell(review: review))
+            }
+        }
+        
+        return rows
+    }
+
 }

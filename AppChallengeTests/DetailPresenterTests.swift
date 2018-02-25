@@ -11,6 +11,8 @@ import XCTest
 
 class DetailPresenterTests: XCTestCase {
     
+    let mock = JsonMock()
+    
     override func setUp() {
         super.setUp()
     }
@@ -32,6 +34,38 @@ class DetailPresenterTests: XCTestCase {
         XCTAssertNotNil(presenter.viewProtocol, "ListingPresenter init with viewController")
     }
     
+    func testDetailWithoutTitle() {
+        let presenter = DetailPresenter(id: "123456")
+        let controller = runViewController(presenter: presenter)
+        XCTAssertNil(controller.title, "without title")
+    }
+    
+    func testDetailTitle() {
+        let response = CarRepair.from(mock.carRepairDict)
+        XCTAssertNotNil(response)
+        
+        let presenter = DetailPresenter(id: "123456")
+        let controller = runViewController(presenter: presenter)
+        presenter.viewProtocol = controller
+        presenter.updateUI(data: response!)
+        XCTAssertEqual(controller.title, "Moses & Sons Smash Repairs")
+    }
+    
+    func testReviewAddressCell() {
+        let cell = ReviewAddressCell(head: "title", description: "description")
+        XCTAssertEqual(cell.title, "title")
+        XCTAssertEqual(cell.descriptionText, "description")
+    }
+    
+    func testCellsCount() {
+        let response = CarRepair.from(mock.carRepairDict)
+        XCTAssertNotNil(response)
+        
+        let presenter = DetailPresenter(id: "123456")
+        let cells = presenter.loadCells(data: response!)
+        XCTAssertEqual(cells.count, 4)
+        
+    }
 }
 
 // MARK: - Helper

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UIColor_Hex_Swift
 
 protocol ListingRouter {
     func showDetail(placeId: String)
@@ -29,6 +30,17 @@ class MainRouter: UINavigationController {
     convenience init(window: UIWindow?) {
         self.init()
         self.window = window
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationBar.barStyle = .black
+        navigationBar.tintColor = .white
+        navigationBar.barTintColor = UIColor("#472f91")
     }
     
     /// Launch navigation with car repair listing

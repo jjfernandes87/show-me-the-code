@@ -13,9 +13,7 @@ class ListingUITests: XCTestCase {
     override func setUp() {
         super.setUp()
         continueAfterFailure = false
-
-        let app = XCUIApplication()
-        app.launch()
+        XCUIApplication().launch()
     }
     
     override func tearDown() {

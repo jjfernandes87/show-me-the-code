@@ -15,18 +15,18 @@ struct Review: Mappable {
     let authorUrl: URL
     let language: String
     let profilePhotoUrl: URL
-    let rating: Int
     let relativeTimeDescription: String
-    let text: String
+    let rating: Float?
+    let text: String?
     
     init(map: Mapper) throws {
         try authorName = map.from("author_name")
         try authorUrl = map.from("author_url")
         try language = map.from("language")
         try profilePhotoUrl = map.from("profile_photo_url")
-        try rating = map.from("rating")
         try relativeTimeDescription = map.from("relative_time_description")
-        try text = map.from("text")
+        text = map.optionalFrom("text")
+        rating = map.optionalFrom("rating")
     }
 }
 

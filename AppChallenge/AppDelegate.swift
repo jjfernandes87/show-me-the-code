@@ -15,14 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    //API KEY: AIzaSyCxmDvGnuO7NXfGt-DiviuxOZOwYDgnqPc
-    //listing: https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670,151.1957&radius=500&types=food&name=cruise&key=YOUR_API_KEY
-    //params: location, radius, types, name, key
-    
-    //detail: https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJN1t_tDeuEmsRUsoyG83frY4&key=YOUR_API_KEY
-    //params: placeid, key
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        preloadedExceptionsXib = UINib(nibName: "UIBaseViewController+exceptions", bundle: Bundle.main)
+        preloadedLoadingXib = UINib(nibName: "UIBaseViewController+loading", bundle: Bundle.main)
+        preloadedNetworkXib = UINib(nibName: "UIBaseViewController+network", bundle: Bundle.main)
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
