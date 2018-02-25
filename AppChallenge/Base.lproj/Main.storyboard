@@ -29,18 +29,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jS4-SA-T9b">
-                                                    <rect key="frame" x="15" y="8" width="44" height="44"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="44" id="GbJ-cT-e9L"/>
-                                                        <constraint firstAttribute="width" constant="44" id="Spm-fR-6pb"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="iCi-8V-ije">
-                                                    <rect key="frame" x="69" y="8" width="273" height="83"/>
+                                                    <rect key="frame" x="15" y="8" width="327" height="83"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jxg-jq-qQ0">
-                                                            <rect key="frame" x="0.0" y="0.0" width="273" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="327" height="20.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="3.7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4z8-F1-aES">
                                                                     <rect key="frame" x="0.0" y="0.0" width="25" height="20.5"/>
@@ -49,7 +42,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="★★★★★" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bz1-Ih-P3t">
-                                                                    <rect key="frame" x="35" y="0.0" width="238" height="20.5"/>
+                                                                    <rect key="frame" x="35" y="0.0" width="292" height="20.5"/>
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -57,13 +50,13 @@
                                                             </subviews>
                                                         </stackView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Itaesbra Mechanical Industry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPV-2r-emC">
-                                                            <rect key="frame" x="0.0" y="22.5" width="273" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="22.5" width="327" height="20.5"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estrada das Lágrimas, 3220 - Jardim Patente Novo, São Paulo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noZ-zH-Cei">
-                                                            <rect key="frame" x="0.0" y="45" width="273" height="38"/>
+                                                            <rect key="frame" x="0.0" y="45" width="327" height="38"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -72,18 +65,14 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="jS4-SA-T9b" firstAttribute="leading" secondItem="U0g-Vb-979" secondAttribute="leading" constant="15" id="0Rg-o1-1HI"/>
-                                                <constraint firstItem="iCi-8V-ije" firstAttribute="top" secondItem="jS4-SA-T9b" secondAttribute="top" id="AGB-Ql-cDU"/>
-                                                <constraint firstAttribute="bottom" secondItem="jS4-SA-T9b" secondAttribute="bottom" priority="250" constant="8" id="GV1-zu-JvF"/>
                                                 <constraint firstAttribute="trailing" secondItem="iCi-8V-ije" secondAttribute="trailing" id="Gcn-sx-Q0s"/>
                                                 <constraint firstAttribute="bottom" secondItem="iCi-8V-ije" secondAttribute="bottom" constant="8" id="H74-RR-ktd"/>
-                                                <constraint firstItem="jS4-SA-T9b" firstAttribute="top" secondItem="U0g-Vb-979" secondAttribute="top" constant="8" id="NDf-rT-xoh"/>
-                                                <constraint firstItem="iCi-8V-ije" firstAttribute="leading" secondItem="jS4-SA-T9b" secondAttribute="trailing" constant="10" id="Sxi-O5-e4j"/>
+                                                <constraint firstItem="iCi-8V-ije" firstAttribute="leading" secondItem="U0g-Vb-979" secondAttribute="leading" constant="15" id="WNK-MM-Fqr"/>
+                                                <constraint firstItem="iCi-8V-ije" firstAttribute="top" secondItem="U0g-Vb-979" secondAttribute="top" constant="8" id="erO-8p-7kH"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="address" destination="noZ-zH-Cei" id="9gI-BL-M4i"/>
-                                            <outlet property="icon" destination="jS4-SA-T9b" id="1be-Dg-zcj"/>
                                             <outlet property="name" destination="JPV-2r-emC" id="DQP-Ei-GK8"/>
                                             <outlet property="ratingStars" destination="bz1-Ih-P3t" id="CUB-O6-429"/>
                                             <outlet property="ratingValue" destination="4z8-F1-aES" id="UG8-lZ-FbN"/>

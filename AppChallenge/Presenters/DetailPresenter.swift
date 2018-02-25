@@ -49,7 +49,11 @@ extension DetailPresenter: ViewControllerProtocols {
     internal func loadCells(data: CarRepair) -> [AnyObject] {
         var rows = [AnyObject]()
         rows.append(ReviewAddressCell(head: "Address", description: data.formattedAddress))
-        rows.append(ReviewAddressCell(head: "Phone", description: data.internationalPhoneNumber))
+        
+        if let phone = data.internationalPhoneNumber {
+            rows.append(ReviewAddressCell(head: "Phone", description: phone))
+        }
+        
         rows.append(ReviewAddressCell(head: "Vicinity", description: data.vicinity))
         rows.append(ReviewRatingsCell(card: data))
         

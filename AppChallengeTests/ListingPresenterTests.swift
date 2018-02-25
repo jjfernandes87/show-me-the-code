@@ -84,7 +84,7 @@ class ListingPresenterTests: XCTestCase {
         let cell = controller.tableView.cellForRow(at: IndexPath(row: 0, section: 0))
         XCTAssertNotNil(cell)
         XCTAssertTrue(cell is CardCell)
-        XCTAssertEqual((cell as! CardCell).ratingValue.textColor, UIColor.green)
+        XCTAssertEqual((cell as! CardCell).ratingValue.textColor, UIColor("#389b7e"))
         XCTAssertEqual((cell as! CardCell).name.text, "Moses & Sons Smash Repairs")
     }
     

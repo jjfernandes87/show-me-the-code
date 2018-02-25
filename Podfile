@@ -10,7 +10,8 @@ target 'AppChallenge' do
   pod 'ModelMapper'
   pod 'Alamofire'
   pod 'Nuke'
-
+  pod 'UIColor_Hex_Swift'
+  
   target 'AppChallengeTests' do
   end
 
