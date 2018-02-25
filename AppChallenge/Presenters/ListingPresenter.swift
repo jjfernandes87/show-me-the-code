@@ -22,6 +22,7 @@ extension ListingPresenter: ViewControllerProtocols {
     /// setup presenter
     func viewDidLoad() {
         guard let controller = viewProtocol else { return }
+        controller.navigationController?.navigationBar.prefersLargeTitles = true
         controller.tableView.rowHeight = UITableViewAutomaticDimension
         controller.tableView.estimatedRowHeight = 100
         controller.tableView.dataSource = self

@@ -1,78 +1,12 @@
 {
 	"html_attributions": [],
 	"result": {
-		"address_components": [
-			{
-				"long_name": "192",
-				"short_name": "192",
-				"types": [
-					"street_number"
-				]
-			},
-			{
-				"long_name": "Harris Street",
-				"short_name": "Harris St",
-				"types": [
-					"route"
-				]
-			},
-			{
-				"long_name": "Pyrmont",
-				"short_name": "Pyrmont",
-				"types": [
-					"locality",
-					"political"
-				]
-			},
-			{
-				"long_name": "Council of the City of Sydney",
-				"short_name": "Sydney",
-				"types": [
-					"administrative_area_level_2",
-					"political"
-				]
-			},
-			{
-				"long_name": "New South Wales",
-				"short_name": "NSW",
-				"types": [
-					"administrative_area_level_1",
-					"political"
-				]
-			},
-			{
-				"long_name": "Australia",
-				"short_name": "AU",
-				"types": [
-					"country",
-					"political"
-				]
-			},
-			{
-				"long_name": "2009",
-				"short_name": "2009",
-				"types": [
-					"postal_code"
-				]
-			}
-		],
-		"adr_address": "<span class=\"street-address\">192 Harris St</span>, <span class=\"locality\">Pyrmont</span> <span class=\"region\">NSW</span> <span class=\"postal-code\">2009</span>, <span class=\"country-name\">Australia</span>",
 		"formatted_address": "192 Harris St, Pyrmont NSW 2009, Australia",
 		"formatted_phone_number": "(02) 9660 1232",
 		"geometry": {
 			"location": {
 				"lat": -33.87054500000001,
 				"lng": 151.194722
-			},
-			"viewport": {
-				"northeast": {
-					"lat": -33.86924251970851,
-					"lng": 151.1959562802915
-				},
-				"southwest": {
-					"lat": -33.8719404802915,
-					"lng": 151.1932583197085
-				}
 			}
 		},
 		"icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
@@ -81,7 +15,6 @@
 		"name": "Moses & Sons Smash Repairs",
 		"place_id": "ChIJDSR7MTGuEmsR9-82GmIk__E",
 		"rating": 5,
-		"reference": "CmRSAAAAAE9SoQ5VI6cNQFS4cEDqYrswuEy0deQC9f6BGXpYVDjctFz70oUXgQYJPSw1eBHVlkCLUCKw-EYOArcxMPi1ieAW50PtPLUeQAIorL1sGMYiWLgfaxnIztm-46-5pf7_EhCcFQgkMcEgB-yuku-ab1ZyGhTxuIP5nrTbFML8hW7D1FmFeULnHA",
 		"reviews": [
 			{
 				"author_name": "Tremar Prendergast",
@@ -100,18 +33,11 @@
 				"profile_photo_url": "https://lh6.googleusercontent.com/-Ap_2LrFz25A/AAAAAAAAAAI/AAAAAAAAAAA/ACSILjVDLpeGiDskFBT3fjof-Wm7kVlnXQ/s128-c0x00000000-cc-rp-mo/photo.jpg",
 				"rating": 5,
 				"relative_time_description": "8 months ago",
-				"text": "",
+				"text": "These guys did a fantastic job of repairing the damage to my front bumper for a very reasonable price. Friendly service too.",
 				"time": 1496809265
 			}
 		],
-		"scope": "GOOGLE",
-		"types": [
-			"car_repair",
-			"point_of_interest",
-			"establishment"
-		],
 		"url": "https://maps.google.com/?cid=17437696285967052791",
-		"utc_offset": 660,
 		"vicinity": "192 Harris Street, Pyrmont"
 	},
 	"status": "OK"

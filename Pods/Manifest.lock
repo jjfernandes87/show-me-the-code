@@ -2,7 +2,7 @@ PODS:
   - Alamofire (4.6.0)
   - ConfigurationProvider (0.0.10)
   - ModelMapper (7.4.1)
-  - Nuke (6.0)
+  - Nuke (6.1)
 
 DEPENDENCIES:
   - Alamofire
@@ -14,8 +14,8 @@ SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   ConfigurationProvider: 0835ec4ad993e84e9f2f91b20caf302abc6a8543
   ModelMapper: e576b4e32007bf574d0f9e4f533d29c46d29f146
-  Nuke: d83812262734dad51e3c498cb1c4f7923f2b78c6
+  Nuke: 0513c8d156bd9a2adb15db70622c3527f44542c5
 
-PODFILE CHECKSUM: 8f94df0649bb26c7266908904232190c0cadfd2e
+PODFILE CHECKSUM: 3c00fd834104b86362c26f2182885f11dcaf7d68
 
 COCOAPODS: 1.4.0

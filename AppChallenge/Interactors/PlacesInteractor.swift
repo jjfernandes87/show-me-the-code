@@ -39,9 +39,8 @@ class PlacesInteractor: NSObject {
         
         let config = RequestConfig(url: url, method: .get, parameters: parameters)
         ServiceAPI.request(config: config, success: { (result) in
-            guard let json = result else { return completion(false, "Parse error", nil) }
-            print("json: \(json)")
-            completion(true, nil, nil)
+            guard let json = result, let response = CarRepairDetail.from(json) else { return completion(false, "Parse error", nil) }
+            completion(true, nil, response.result)
         }) { (error, errorMessage) in
             completion(false, errorMessage, nil)
         }

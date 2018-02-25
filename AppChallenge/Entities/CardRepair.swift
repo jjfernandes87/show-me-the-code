@@ -9,6 +9,13 @@
 import UIKit
 import Mapper
 
+struct CarRepairDetail: Mappable {
+    let result: CarRepair
+    init(map: Mapper) throws {
+        try result = map.from("result")
+    }
+}
+
 class CarRepair: CarRepairCard {
     
     let formattedAddress: String
@@ -27,4 +34,3 @@ class CarRepair: CarRepairCard {
         try super.init(map: map)
     }
 }
-
