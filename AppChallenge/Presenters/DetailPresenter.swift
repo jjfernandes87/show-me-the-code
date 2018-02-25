@@ -54,7 +54,6 @@ extension DetailPresenter: ViewControllerProtocols {
         rows.append(ReviewAddressCell(head: "Address", description: data.formattedAddress))
         
         if let phone = data.internationalPhoneNumber {
-            phoneBarButton(phone: phone)
             rows.append(ReviewAddressCell(head: "Phone", description: phone))
         }
         
