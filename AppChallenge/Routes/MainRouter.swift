@@ -40,6 +40,7 @@ class MainRouter: UINavigationController {
         super.viewDidLoad()
         navigationBar.barStyle = .black
         navigationBar.tintColor = .white
+        navigationBar.isTranslucent = false
         navigationBar.barTintColor = UIColor("#472f91")
     }
     

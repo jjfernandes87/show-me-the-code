@@ -19,32 +19,31 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wr5-j9-zdY">
-                    <rect key="frame" x="112.5" y="297.5" width="150" height="72.5"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ops!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Cv-AX-1c6">
-                            <rect key="frame" x="0.0" y="0.0" width="150" height="24"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                            <color key="textColor" red="0.36862745099999999" green="0.61176470589999998" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parece que você está sem  internet." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42q-TL-tUT">
-                            <rect key="frame" x="0.0" y="34" width="150" height="38.5"/>
-                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
-                            <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No internet connection" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42q-TL-tUT">
+                    <rect key="frame" x="105" y="374" width="164.5" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                    <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" image="no-internet" translatesAutoresizingMaskIntoConstraints="NO" id="cJi-i3-rxK">
+                    <rect key="frame" x="93.5" y="176" width="188" height="188"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="150" id="WnS-fw-86w"/>
+                        <constraint firstAttribute="width" constant="188" id="DsR-SY-cM9"/>
+                        <constraint firstAttribute="height" constant="188" id="epx-Th-pB3"/>
                     </constraints>
-                </stackView>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="Wr5-j9-zdY" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6tZ-RE-q18"/>
-                <constraint firstItem="Wr5-j9-zdY" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hJ5-GX-QEO"/>
+                <constraint firstItem="cJi-i3-rxK" firstAttribute="centerX" secondItem="42q-TL-tUT" secondAttribute="centerX" id="MdH-B3-5J0"/>
+                <constraint firstItem="42q-TL-tUT" firstAttribute="top" secondItem="cJi-i3-rxK" secondAttribute="bottom" constant="10" id="naA-9x-7la"/>
+                <constraint firstItem="42q-TL-tUT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="v5I-MI-p3Z"/>
+                <constraint firstItem="42q-TL-tUT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="50" id="zgM-jO-MKY"/>
             </constraints>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="no-internet" width="512" height="512"/>
+    </resources>
 </document>

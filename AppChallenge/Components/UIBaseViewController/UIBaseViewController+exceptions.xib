@@ -19,20 +19,33 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" tag="400" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Etn-uH-blc">
-                    <rect key="frame" x="10" y="324" width="355" height="20"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There was a problem to load the content" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wa8-bQ-Epy">
+                    <rect key="frame" x="100" y="364.5" width="175" height="38.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                    <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" image="error" translatesAutoresizingMaskIntoConstraints="NO" id="qNB-Lp-BER">
+                    <rect key="frame" x="93" y="166.5" width="188" height="188"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="188" id="BaI-li-zn8"/>
+                        <constraint firstAttribute="height" constant="188" id="zRJ-Sm-cAg"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="Etn-uH-blc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="VCh-Ev-W1I"/>
-                <constraint firstAttribute="centerX" secondItem="Etn-uH-blc" secondAttribute="centerX" id="aNm-Al-LBV"/>
-                <constraint firstAttribute="centerY" secondItem="Etn-uH-blc" secondAttribute="centerY" id="cMa-Qd-fg0"/>
-                <constraint firstAttribute="trailing" secondItem="Etn-uH-blc" secondAttribute="trailing" constant="10" id="cyH-h9-cAt"/>
+                <constraint firstAttribute="trailing" secondItem="wa8-bQ-Epy" secondAttribute="trailing" constant="100" id="HzV-Ec-CJd"/>
+                <constraint firstItem="wa8-bQ-Epy" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="50" id="aSy-eI-jIk"/>
+                <constraint firstItem="wa8-bQ-Epy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cNf-Aa-69E"/>
+                <constraint firstItem="qNB-Lp-BER" firstAttribute="centerX" secondItem="wa8-bQ-Epy" secondAttribute="centerX" id="w5l-02-wFN"/>
+                <constraint firstItem="wa8-bQ-Epy" firstAttribute="top" secondItem="qNB-Lp-BER" secondAttribute="bottom" constant="10" id="y6g-1B-ys5"/>
+                <constraint firstItem="wa8-bQ-Epy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="100" id="za3-OY-DwG"/>
             </constraints>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="error" width="512" height="512"/>
+    </resources>
 </document>
