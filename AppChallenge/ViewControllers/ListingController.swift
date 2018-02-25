@@ -20,7 +20,7 @@ class ListingController: UIBaseViewController {
     }
     
     override func downloadData(viewOccasion: DownloadOccasion) -> Bool {
-        if viewOccasion == .viewDidAppear {
+        if viewOccasion == .viewDidLoad {
             presenter.downloadData()
             return true
         }
