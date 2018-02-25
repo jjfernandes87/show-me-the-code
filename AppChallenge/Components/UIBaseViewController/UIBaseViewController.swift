@@ -31,6 +31,7 @@ enum UIBaseViewStatus: Int {
 
 class UIBaseViewController: UIViewController {
     
+    let networkStatus = NetworkStatus.sharedInstance
     var viewStatus: UIBaseViewStatus?
     
     //MARK: - Outlet
@@ -39,12 +40,19 @@ class UIBaseViewController: UIViewController {
     @IBOutlet weak var uiExceptionsNetworkView: UIView?
     @IBOutlet weak var uiMissResultView: UIView?
     
-    deinit { print(description) }
+    deinit {
+        print(description)
+        NotificationCenter.default.removeObserver(self, name: .notReachable, object: nil)
+        NotificationCenter.default.removeObserver(self, name: .reachable, object: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLoadingAndErrorView()
+        networkStatus.startNetworkReachabilityObserver()
         tryDownloadingOnOccasion(occasion: .viewDidLoad)
+        NotificationCenter.default.addObserver(self, selector: #selector(notReachable), name: .notReachable, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(reachable), name: .reachable, object: nil)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -175,5 +183,14 @@ extension UIBaseViewController {
     
     private func setNetworkActivity(visible: Bool) {
         UIApplication.shared.isNetworkActivityIndicatorVisible  = visible
+    }
+    
+    @objc fileprivate func notReachable() {
+        setViewStatus(status: .network)
+    }
+    
+    @objc fileprivate func reachable() {
+        setLastViewStatus()
+        tryDownloadingOnOccasion(occasion: .retry)
     }
 }

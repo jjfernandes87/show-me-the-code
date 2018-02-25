@@ -21,28 +21,11 @@ class DetailPresenter: NSObject {
         super.init()
     }
     
-    /// Add UIBarButtonItem
-    internal func phoneBarButton(phone: String) {
-        guard let controller = viewProtocol else { return }
-        self.number = phone
-        controller.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "phone"),
-                                                                       style: .done,
-                                                                       target: self,
-                                                                       action: #selector(calling))
-    }
-    
-    /// Call action
-    @objc func calling() {
-        self.number.makeACall()
-    }
 }
 
 extension DetailPresenter: ViewControllerProtocols {
     
-    func viewDidLoad() {
-        guard let controller = viewProtocol else { return }
-        controller.navigationController?.navigationBar.prefersLargeTitles = true
-    }
+    func viewDidLoad() {}
     
     /// download detail data
     func downloadData() {

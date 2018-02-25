@@ -20,7 +20,7 @@ class DetailController: UIBaseViewController {
     }
     
     override func downloadData(viewOccasion: DownloadOccasion) -> Bool {
-        if viewOccasion == .viewDidLoad {
+        if viewOccasion == .viewDidLoad || viewOccasion == .retry {
             presenter.downloadData()
             return true
         }
