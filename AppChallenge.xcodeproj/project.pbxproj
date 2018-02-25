@@ -14,6 +14,9 @@
 		864AA37B2042FBE000840E62 /* ReviewTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864AA37A2042FBE000840E62 /* ReviewTextCell.swift */; };
 		864AA38120430EDB00840E62 /* TableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864AA37F20430EDB00840E62 /* TableViewManager.swift */; };
 		864AA38220430EDB00840E62 /* TableViewManagerCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864AA38020430EDB00840E62 /* TableViewManagerCache.swift */; };
+		864AA3862043336100840E62 /* UIBaseViewController+loading.xib in Resources */ = {isa = PBXBuildFile; fileRef = 864AA3832043336100840E62 /* UIBaseViewController+loading.xib */; };
+		864AA3872043336100840E62 /* UIBaseViewController+network.xib in Resources */ = {isa = PBXBuildFile; fileRef = 864AA3842043336100840E62 /* UIBaseViewController+network.xib */; };
+		864AA3882043336100840E62 /* UIBaseViewController+exceptions.xib in Resources */ = {isa = PBXBuildFile; fileRef = 864AA3852043336100840E62 /* UIBaseViewController+exceptions.xib */; };
 		8667C4EF20417EDC00D8E8A1 /* detail in Resources */ = {isa = PBXBuildFile; fileRef = 8667C4EE20417EDC00D8E8A1 /* detail */; };
 		8667C4F2204180BD00D8E8A1 /* CLLocationCoordinate2D+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8667C4F1204180BD00D8E8A1 /* CLLocationCoordinate2D+Helpers.swift */; };
 		8667C4F42041840300D8E8A1 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8667C4F32041840300D8E8A1 /* DetailController.swift */; };
@@ -82,6 +85,9 @@
 		864AA37A2042FBE000840E62 /* ReviewTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTextCell.swift; sourceTree = "<group>"; };
 		864AA37F20430EDB00840E62 /* TableViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewManager.swift; sourceTree = "<group>"; };
 		864AA38020430EDB00840E62 /* TableViewManagerCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewManagerCache.swift; sourceTree = "<group>"; };
+		864AA3832043336100840E62 /* UIBaseViewController+loading.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "UIBaseViewController+loading.xib"; sourceTree = "<group>"; };
+		864AA3842043336100840E62 /* UIBaseViewController+network.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "UIBaseViewController+network.xib"; sourceTree = "<group>"; };
+		864AA3852043336100840E62 /* UIBaseViewController+exceptions.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "UIBaseViewController+exceptions.xib"; sourceTree = "<group>"; };
 		8667C4EE20417EDC00D8E8A1 /* detail */ = {isa = PBXFileReference; explicitFileType = text.json; path = detail; sourceTree = "<group>"; };
 		8667C4F1204180BD00D8E8A1 /* CLLocationCoordinate2D+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Helpers.swift"; sourceTree = "<group>"; };
 		8667C4F32041840300D8E8A1 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
@@ -204,6 +210,9 @@
 			isa = PBXGroup;
 			children = (
 				867AF7A3203F783600F30818 /* UIBaseViewController.swift */,
+				864AA3852043336100840E62 /* UIBaseViewController+exceptions.xib */,
+				864AA3832043336100840E62 /* UIBaseViewController+loading.xib */,
+				864AA3842043336100840E62 /* UIBaseViewController+network.xib */,
 			);
 			path = UIBaseViewController;
 			sourceTree = "<group>";
@@ -510,9 +519,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				864AA3862043336100840E62 /* UIBaseViewController+loading.xib in Resources */,
 				8685EAFB203E3BA30038FE64 /* LaunchScreen.storyboard in Resources */,
 				867AF7A8203F83D700F30818 /* Configuration.plist in Resources */,
 				867AF7B2203FA5E300F30818 /* listing in Resources */,
+				864AA3872043336100840E62 /* UIBaseViewController+network.xib in Resources */,
+				864AA3882043336100840E62 /* UIBaseViewController+exceptions.xib in Resources */,
 				8667C4EF20417EDC00D8E8A1 /* detail in Resources */,
 				8685EAF8203E3BA30038FE64 /* Assets.xcassets in Resources */,
 				8685EAF6203E3BA30038FE64 /* Main.storyboard in Resources */,

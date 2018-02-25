@@ -8,6 +8,10 @@
 
 import UIKit
 
+var preloadedLoadingXib: UINib!
+var preloadedExceptionsXib: UINib!
+var preloadedNetworkXib: UINib!
+
 enum DownloadOccasion: Int {
     case viewDidLoad
     case viewWillAppear
@@ -39,6 +43,7 @@ class UIBaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupLoadingAndErrorView()
         tryDownloadingOnOccasion(occasion: .viewDidLoad)
     }
     
@@ -49,6 +54,7 @@ class UIBaseViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        setupLoadingAndErrorView()
         tryDownloadingOnOccasion(occasion: .viewWillAppear)
     }
     
@@ -60,6 +66,42 @@ class UIBaseViewController: UIViewController {
         tryDownloadingOnOccasion(occasion: .retry)
     }
     
+    fileprivate func setupLoadingAndErrorView() {
+        var statusViews = [UIView]()
+        
+        if uiLoadingView == nil {
+            preloadedLoadingXib.instantiate(withOwner: self, options: nil)
+            if let loading = uiLoadingView {
+                statusViews.append(loading)
+            }
+        }
+        
+        if uiExceptionsView == nil {
+            preloadedExceptionsXib.instantiate(withOwner: self, options: nil)
+            if let error = uiExceptionsView {
+                statusViews.append(error)
+            }
+        }
+        
+        if uiExceptionsNetworkView == nil {
+            preloadedNetworkXib.instantiate(withOwner: self, options: nil)
+            if let network = uiExceptionsNetworkView {
+                statusViews.append(network)
+            }
+        }
+        
+        
+        for statusView in statusViews {
+            if statusView.superview == nil {
+                self.view.addSubview(statusView)
+                statusView.frame = self.view.frame
+                statusView.clipsToBounds = true
+                statusView.alpha = 0.0
+                statusView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+                statusView.setNeedsDisplay()
+            }
+        }
+    }
 }
 
 // MARK: - Download occasion

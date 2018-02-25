@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CollectionManager
 
 class DetailPresenter: NSObject {
     
@@ -27,7 +26,6 @@ extension DetailPresenter: ViewControllerProtocols {
     func viewDidLoad() {
         guard let controller = viewProtocol else { return }
         controller.navigationController?.navigationBar.prefersLargeTitles = true
-        controller.tableView.managerProtocol = self
     }
     
     /// download detail data
@@ -65,9 +63,3 @@ extension DetailPresenter: ViewControllerProtocols {
     }
 
 }
-
-extension DetailPresenter: TableViewManagerDelegate {
-    
-}
-
-
