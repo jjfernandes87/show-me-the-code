@@ -39,7 +39,7 @@ class Geoloc: NSObject {
     }
     
     func startLocationRequest() {
-        guard let locationManager = manager else { return }
+        guard let locationManager = manager else { requireLocation(); return  }
         locationManager.startUpdatingLocation()
     }
     
