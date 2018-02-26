@@ -10,6 +10,7 @@ import UIKit
 import UIColor_Hex_Swift
 
 protocol ListingRouter {
+    func showOnBoarding()
     func showDetail(placeId: String)
 }
 
@@ -18,8 +19,13 @@ struct StoryBoardInfo {
     func instantiateListingViewController() -> ListingController {
         return mainStoryBoard.instantiateViewController(withIdentifier: "ListingController") as! ListingController
     }
+    
     func instantiateDetailViewController() -> DetailController {
         return mainStoryBoard.instantiateViewController(withIdentifier: "DetailController") as! DetailController
+    }
+    
+    func instantiateOnboardingViewController() -> OnboardingController {
+        return mainStoryBoard.instantiateViewController(withIdentifier: "OnboardingController") as! OnboardingController
     }
 }
 
@@ -40,6 +46,7 @@ class MainRouter: UINavigationController {
         super.viewDidLoad()
         navigationBar.barStyle = .black
         navigationBar.tintColor = .white
+        navigationBar.isTranslucent = false
         navigationBar.barTintColor = UIColor("#472f91")
     }
     
@@ -68,6 +75,11 @@ extension MainRouter {
 
 // MARK: - DetailRouter methods
 extension MainRouter: ListingRouter {
+    
+    func showOnBoarding() {
+        let controller = StoryBoardInfo().instantiateOnboardingViewController()
+        present(controller, animated: true, completion: nil)
+    }
     
     func showDetail(placeId: String) {
         let presenter = DetailPresenter(id: placeId)

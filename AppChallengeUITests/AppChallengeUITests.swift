@@ -15,6 +15,7 @@ class AppChallengeUITests: XCTestCase {
         continueAfterFailure = false
         
         let app = XCUIApplication()
+        app.launchArguments = ["UITesting"]
         setupSnapshot(app)
         app.launch()
     }
@@ -27,7 +28,7 @@ class AppChallengeUITests: XCTestCase {
         let app = XCUIApplication()
         XCTAssertTrue(app.staticTexts["Teste 1"].exists)
         XCTAssertTrue(app.navigationBars["Listing"].exists)
-        snapshot("0Listing")
+        snapshot("1Listing")
     }
     
     func testListingPushToDetail() {
@@ -42,6 +43,6 @@ class AppChallengeUITests: XCTestCase {
         let tableQuery = app.tables
         tableQuery.cells.element(boundBy: 0).tap()
         XCTAssertTrue(app.navigationBars["Moses & Sons Smash Repairs"].exists)
-        snapshot("1Detail")
+        snapshot("2Detail")
     }
 }

@@ -20,8 +20,17 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>telprompt</string>
+		<string>tel</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationUsageDescription</key>
+	<string>We would like to get your location, to look for the car repair nearest</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We would like to get your location, to look for the car repair nearest</string>
 	<key>Scheme</key>
 	<string>$(SCHEME)</string>
 	<key>UILaunchStoryboardName</key>

@@ -14,23 +14,23 @@ class DetailPresenter: NSObject {
     
     var service = PlacesInteractor()
     var placeId: String
+    var number = ""
     
     init(id: String) {
         placeId = id
         super.init()
     }
+    
 }
 
 extension DetailPresenter: ViewControllerProtocols {
     
-    func viewDidLoad() {
-        guard let controller = viewProtocol else { return }
-        controller.navigationController?.navigationBar.prefersLargeTitles = true
-    }
+    func viewDidLoad() {}
     
     /// download detail data
     func downloadData() {
-        service.loadDetail(placeId: placeId) { (success, errorMessage, result) in
+        service.loadDetail(placeId: placeId) { (success, errorMessage, result, noInternet) in
+            if noInternet { self.viewProtocol?.applyNetwork(); return }
             guard let data = result else { self.viewProtocol?.applyExceptionView(); return }
             DispatchQueue.main.async { self.updateUI(data: data) }
         }
@@ -46,6 +46,10 @@ extension DetailPresenter: ViewControllerProtocols {
         controller.applyPresentingView()
     }
     
+    /// Load cells
+    ///
+    /// - Parameter data: carRepair
+    /// - Returns: lists of cells
     internal func loadCells(data: CarRepair) -> [AnyObject] {
         var rows = [AnyObject]()
         rows.append(ReviewAddressCell(head: "Address", description: data.formattedAddress))

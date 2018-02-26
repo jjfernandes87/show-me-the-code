@@ -20,11 +20,21 @@ class ListingController: UIBaseViewController {
     }
     
     override func downloadData(viewOccasion: DownloadOccasion) -> Bool {
-        if viewOccasion == .viewDidLoad {
+        if viewOccasion == .viewWillAppear || viewOccasion == .retry {
             presenter.downloadData()
             return true
         }
         return false
+    }
+    
+    /// Receive a new location
+    override func receiveLocation() {
+        presenter.downloadData()
+    }
+    
+    /// setViewStatus when service no internet connection
+    func applyNetwork() {
+        setViewStatus(status: .network, animated: true)
     }
     
     /// setViewStatus when result service equal zero

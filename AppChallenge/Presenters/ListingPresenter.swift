@@ -21,17 +21,26 @@ extension ListingPresenter: ViewControllerProtocols {
     
     /// setup presenter
     func viewDidLoad() {
+        onboarding()
         guard let controller = viewProtocol else { return }
-        controller.navigationController?.navigationBar.prefersLargeTitles = true
         controller.tableView.rowHeight = UITableViewAutomaticDimension
         controller.tableView.estimatedRowHeight = 100
         controller.tableView.dataSource = self
         controller.tableView.delegate = self
     }
     
+    /// Onboarding process
+    fileprivate func onboarding() {
+        if Geoloc.shared.userLocationAvailable() == false {
+            router?.showOnBoarding()
+        }
+    }
+    
     /// download listing data
-    func downloadData() {
-        service.interactor.loadListing { (success, errorMessage, result)  in
+    @objc func downloadData() {
+        guard let location = Geoloc.shared.currentLocation() else { return }
+        service.interactor.loadListing(location: location, radius: 500) { (success, errorMessage, result, noInternet)  in
+            if noInternet { self.viewProtocol?.applyNetwork(); return }
             if success == false { self.viewProtocol?.applyExceptionView(); return }
             if result?.count == 0 { self.viewProtocol?.applyZeroResultView(); return }
             self.reloadData(result: result)

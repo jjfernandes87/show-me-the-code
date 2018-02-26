@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIBaseViewController" customModule="AppChallenge" customModuleProvider="target">
+            <connections>
+                <outlet property="uiExceptionsView" destination="iN0-l3-epB" id="HyF-Wq-PoM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="error">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There was a problem to load the content" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wa8-bQ-Epy">
+                    <rect key="frame" x="100" y="364.5" width="175" height="38.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" image="error" translatesAutoresizingMaskIntoConstraints="NO" id="qNB-Lp-BER">
+                    <rect key="frame" x="93" y="166.5" width="188" height="188"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="188" id="BaI-li-zn8"/>
+                        <constraint firstAttribute="height" constant="188" id="zRJ-Sm-cAg"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wa8-bQ-Epy" secondAttribute="trailing" constant="100" id="HzV-Ec-CJd"/>
+                <constraint firstItem="wa8-bQ-Epy" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="50" id="aSy-eI-jIk"/>
+                <constraint firstItem="wa8-bQ-Epy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cNf-Aa-69E"/>
+                <constraint firstItem="qNB-Lp-BER" firstAttribute="centerX" secondItem="wa8-bQ-Epy" secondAttribute="centerX" id="w5l-02-wFN"/>
+                <constraint firstItem="wa8-bQ-Epy" firstAttribute="top" secondItem="qNB-Lp-BER" secondAttribute="bottom" constant="10" id="y6g-1B-ys5"/>
+                <constraint firstItem="wa8-bQ-Epy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="100" id="za3-OY-DwG"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="error" width="512" height="512"/>
+    </resources>
+</document>

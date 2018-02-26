@@ -10,6 +10,68 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Onboarding Controller-->
+        <scene sceneID="Ips-XF-yJD">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3bF-Us-JCe" customClass="OnboardingController" customModule="AppChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bUo-dP-XBZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We would like to get your location, to look for the car repair nearest" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mon-dK-76i">
+                                <rect key="frame" x="60" y="271.5" width="255" height="124.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="255" id="pm2-Eh-cKR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="26"/>
+                                <color key="textColor" red="0.98327165839999997" green="0.68216878179999996" blue="0.089898489420000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.10000000000000001" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" image="splash_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Sbs-N2-FrV">
+                                <rect key="frame" x="159" y="390" width="216" height="277"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="277" id="1UM-3g-kUO"/>
+                                    <constraint firstAttribute="width" constant="216" id="Bog-hO-O0g"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgW-8h-Jll">
+                                <rect key="frame" x="127.5" y="416" width="120" height="36"/>
+                                <color key="backgroundColor" red="0.98327165839999997" green="0.68216878179999996" blue="0.089898489420000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="ACL-t6-7na"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="FNr-uB-kTI"/>
+                                </constraints>
+                                <color key="tintColor" red="0.2784313725" green="0.1843137255" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Allow"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="allow" destination="3bF-Us-JCe" eventType="touchUpInside" id="GSI-Qw-U0I"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2784313725" green="0.1843137255" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VgW-8h-Jll" firstAttribute="top" secondItem="mon-dK-76i" secondAttribute="bottom" constant="20" id="9zv-S7-WRC"/>
+                            <constraint firstItem="Sbs-N2-FrV" firstAttribute="bottom" secondItem="3qa-4O-wUX" secondAttribute="bottom" id="LRp-eb-CVd"/>
+                            <constraint firstItem="mon-dK-76i" firstAttribute="centerX" secondItem="bUo-dP-XBZ" secondAttribute="centerX" id="ZmX-XL-Ttb"/>
+                            <constraint firstItem="mon-dK-76i" firstAttribute="centerY" secondItem="bUo-dP-XBZ" secondAttribute="centerY" id="eeU-ED-DMv"/>
+                            <constraint firstItem="Sbs-N2-FrV" firstAttribute="trailing" secondItem="3qa-4O-wUX" secondAttribute="trailing" id="m6V-TV-YSG"/>
+                            <constraint firstItem="VgW-8h-Jll" firstAttribute="centerX" secondItem="mon-dK-76i" secondAttribute="centerX" id="tRi-nu-jba"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3qa-4O-wUX"/>
+                    </view>
+                    <connections>
+                        <outlet property="message" destination="mon-dK-76i" id="3lc-tB-75l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mRD-Jk-ui2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-581.60000000000002" y="44.527736131934034"/>
+        </scene>
         <!--Listing-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -382,4 +444,7 @@
             <point key="canvasLocation" x="812" y="43.628185907046479"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="splash_icon" width="91" height="117"/>
+    </resources>
 </document>

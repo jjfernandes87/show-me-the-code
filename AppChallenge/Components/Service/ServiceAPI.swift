@@ -37,10 +37,10 @@ class ServiceAPI: NSObject {
     
     @discardableResult
     class func request(config: RequestConfig, success: @escaping ((_ result : NSDictionary?) -> Void),
-                       failure: @escaping ((_ error : Error?, _ errorMessage: String) -> Void)) -> Request? {
+                       failure: @escaping ((_ error : Error?, _ errorMessage: String, _ internet: Bool) -> Void)) -> Request? {
         
         if let hasConnection = Connectivity.isConnectedToInternet, !hasConnection {
-            failure(nil, "no internet connection")
+            failure(nil, "no internet connection", true)
             return nil
         }
         
@@ -48,7 +48,7 @@ class ServiceAPI: NSObject {
             .responseJSON { (response) in
                 switch response.result {
                 case .success: success(response.value as? NSDictionary)
-                case .failure(let error): failure(error, error.localizedDescription)
+                case .failure(let error): failure(error, error.localizedDescription, false)
                 }
         }
         
