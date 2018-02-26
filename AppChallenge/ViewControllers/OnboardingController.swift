@@ -8,13 +8,19 @@
 
 import UIKit
 
-class OnboardingController: UIViewController {
-
+class OnboardingController: UIBaseViewController {
+    
+    @IBOutlet weak var message: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    @IBAction func close() {
+    override func receiveLocation() {
         dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func allow() {
+        Geoloc.shared.userLocationRequired()
     }
 }

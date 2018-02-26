@@ -27,6 +27,16 @@ class ListingController: UIBaseViewController {
         return false
     }
     
+    /// Receive a new location
+    override func receiveLocation() {
+        presenter.downloadData()
+    }
+    
+    /// setViewStatus when service no internet connection
+    func applyNetwork() {
+        setViewStatus(status: .network, animated: true)
+    }
+    
     /// setViewStatus when result service equal zero
     func applyZeroResultView() {
         setViewStatus(status: .missResult, animated: true)

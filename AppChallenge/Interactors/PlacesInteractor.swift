@@ -14,17 +14,19 @@ class PlacesInteractor: NSObject {
     /// Load listing in Google Maps Web service
     ///
     /// - Parameter completion: result data
-    func loadListing(completion: @escaping ((Bool, String?, [CarRepairCard]?) -> Void)) {
+    func loadListing(location: String, radius: Int, completion: @escaping ((Bool, String?, [CarRepairCard]?, Bool) -> Void)) {
         
         let url = pathURL(tag: "listing")
-        let parameters : [String : Any]  = ["location" : "-23.6315388,-46.5918594", "radius": 500, "types": "car_repair", "key": apiKey()]
+        let parameters : [String : Any]  = ["location" : location, "radius": radius, "types": "car_repair", "key": apiKey()]
         
         let config = RequestConfig(url: url, method: .get, parameters: parameters)
         ServiceAPI.request(config: config, success: { (result) in
-            guard let json = result, let response = CarRepairCollection.from(json) else { return completion(false, "Parse error", nil) }
-            completion(true, nil, response.collection)
-        }) { (error, errorMessage) in
-            completion(false, errorMessage, nil)
+            guard let json = result, let response = CarRepairCollection.from(json) else {
+                return completion(false, "Parse error", nil, false)
+            }
+            completion(true, nil, response.collection, false)
+        }) { (error, errorMessage, internet) in
+            completion(false, errorMessage, nil, internet)
         }
         
     }
@@ -32,17 +34,19 @@ class PlacesInteractor: NSObject {
     /// Load detail in Google Maps Web service
     ///
     /// - Parameter completion: result data
-    func loadDetail(placeId: String, completion: @escaping ((Bool, String?, CarRepair?) -> Void)) {
+    func loadDetail(placeId: String, completion: @escaping ((Bool, String?, CarRepair?, Bool) -> Void)) {
         
         let url = pathURL(tag: "detail")
         let parameters : [String : Any]  = ["placeid" : placeId, "key": apiKey()]
         
         let config = RequestConfig(url: url, method: .get, parameters: parameters)
         ServiceAPI.request(config: config, success: { (result) in
-            guard let json = result, let response = CarRepairDetail.from(json) else { return completion(false, "Parse error", nil) }
-            completion(true, nil, response.result)
-        }) { (error, errorMessage) in
-            completion(false, errorMessage, nil)
+            guard let json = result, let response = CarRepairDetail.from(json) else {
+                return completion(false, "Parse error", nil, false)
+            }
+            completion(true, nil, response.result, false)
+        }) { (error, errorMessage, internet) in
+            completion(false, errorMessage, nil, internet)
         }
         
     }

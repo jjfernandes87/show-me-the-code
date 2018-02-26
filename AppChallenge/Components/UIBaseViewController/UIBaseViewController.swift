@@ -44,6 +44,7 @@ class UIBaseViewController: UIViewController {
         print(description)
         NotificationCenter.default.removeObserver(self, name: .notReachable, object: nil)
         NotificationCenter.default.removeObserver(self, name: .reachable, object: nil)
+        NotificationCenter.default.removeObserver(self, name: .location, object: nil)
     }
     
     override func viewDidLoad() {
@@ -53,7 +54,10 @@ class UIBaseViewController: UIViewController {
         tryDownloadingOnOccasion(occasion: .viewDidLoad)
         NotificationCenter.default.addObserver(self, selector: #selector(notReachable), name: .notReachable, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(reachable), name: .reachable, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(receiveLocation), name: .location, object: nil)
     }
+    
+    @objc func receiveLocation() {}
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

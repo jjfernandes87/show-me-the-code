@@ -48,33 +48,25 @@
                                         <integer key="value" value="18"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcw-Jy-JnS">
-                                <rect key="frame" x="20" y="40" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="ImB-yC-TAt"/>
-                                    <constraint firstAttribute="height" constant="40" id="sw3-a4-De1"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="close"/>
                                 <connections>
-                                    <action selector="close" destination="3bF-Us-JCe" eventType="touchUpInside" id="F6G-NI-9nr"/>
+                                    <action selector="allow" destination="3bF-Us-JCe" eventType="touchUpInside" id="GSI-Qw-U0I"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.2784313725" green="0.1843137255" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="VgW-8h-Jll" firstAttribute="top" secondItem="mon-dK-76i" secondAttribute="bottom" constant="20" id="9zv-S7-WRC"/>
-                            <constraint firstItem="zcw-Jy-JnS" firstAttribute="top" secondItem="3qa-4O-wUX" secondAttribute="top" constant="20" id="IUC-om-NvF"/>
                             <constraint firstItem="Sbs-N2-FrV" firstAttribute="bottom" secondItem="3qa-4O-wUX" secondAttribute="bottom" id="LRp-eb-CVd"/>
                             <constraint firstItem="mon-dK-76i" firstAttribute="centerX" secondItem="bUo-dP-XBZ" secondAttribute="centerX" id="ZmX-XL-Ttb"/>
                             <constraint firstItem="mon-dK-76i" firstAttribute="centerY" secondItem="bUo-dP-XBZ" secondAttribute="centerY" id="eeU-ED-DMv"/>
-                            <constraint firstItem="zcw-Jy-JnS" firstAttribute="leading" secondItem="3qa-4O-wUX" secondAttribute="leading" constant="20" id="gr6-rf-kPc"/>
                             <constraint firstItem="Sbs-N2-FrV" firstAttribute="trailing" secondItem="3qa-4O-wUX" secondAttribute="trailing" id="m6V-TV-YSG"/>
                             <constraint firstItem="VgW-8h-Jll" firstAttribute="centerX" secondItem="mon-dK-76i" secondAttribute="centerX" id="tRi-nu-jba"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3qa-4O-wUX"/>
                     </view>
+                    <connections>
+                        <outlet property="message" destination="mon-dK-76i" id="3lc-tB-75l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mRD-Jk-ui2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -453,7 +445,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="close" width="16" height="16"/>
         <image name="splash_icon" width="91" height="117"/>
     </resources>
 </document>

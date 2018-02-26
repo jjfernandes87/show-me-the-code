@@ -29,7 +29,8 @@ extension DetailPresenter: ViewControllerProtocols {
     
     /// download detail data
     func downloadData() {
-        service.loadDetail(placeId: placeId) { (success, errorMessage, result) in
+        service.loadDetail(placeId: placeId) { (success, errorMessage, result, noInternet) in
+            if noInternet { self.viewProtocol?.applyNetwork(); return }
             guard let data = result else { self.viewProtocol?.applyExceptionView(); return }
             DispatchQueue.main.async { self.updateUI(data: data) }
         }

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		053B0A7F4D83A568F9942D17 /* Pods_AppChallenge_AppChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453E15F2D8EF73B442F1EA44 /* Pods_AppChallenge_AppChallengeTests.framework */; };
 		0544EFC5AD55EA2AF6CCA2F3 /* Pods_AppChallenge_AppChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71447D363F29A3A315A30E94 /* Pods_AppChallenge_AppChallengeUITests.framework */; };
+		8610E3CE2043954100231606 /* TableViewManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8610E3CD2043954100231606 /* TableViewManagerTests.swift */; };
+		8614A15520438F8100FCB049 /* OnBoardingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8614A15420438F8100FCB049 /* OnBoardingTests.swift */; };
+		8614A1572043924200FCB049 /* OnBoardingControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8614A1562043924200FCB049 /* OnBoardingControllerTests.swift */; };
 		864AA3752042FB8100840E62 /* ReviewAddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864AA3742042FB8100840E62 /* ReviewAddressCell.swift */; };
 		864AA3772042FB9000840E62 /* ReviewRatingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864AA3762042FB9000840E62 /* ReviewRatingsCell.swift */; };
 		864AA37B2042FBE000840E62 /* ReviewTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864AA37A2042FBE000840E62 /* ReviewTextCell.swift */; };
@@ -34,8 +37,9 @@
 		867AF7AB203F873B00F30818 /* ServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867AF7AA203F873B00F30818 /* ServiceAPI.swift */; };
 		867AF7AD203F99D400F30818 /* CairRepairTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867AF7AC203F99D400F30818 /* CairRepairTests.swift */; };
 		867AF7B2203FA5E300F30818 /* listing in Resources */ = {isa = PBXBuildFile; fileRef = 867AF7B1203FA5E300F30818 /* listing */; };
-		867CA98A20436DC7005889A4 /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867CA98920436DC7005889A4 /* NetworkStatus.swift */; };
 		867CA98C204377B1005889A4 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867CA98B204377B1005889A4 /* OnboardingController.swift */; };
+		867CA98E20437F26005889A4 /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867CA98D20437F26005889A4 /* NetworkStatus.swift */; };
+		867CA99020437F33005889A4 /* Geoloc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867CA98F20437F33005889A4 /* Geoloc.swift */; };
 		8685EAF1203E3BA30038FE64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8685EAF0203E3BA30038FE64 /* AppDelegate.swift */; };
 		8685EAF6203E3BA30038FE64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8685EAF4203E3BA30038FE64 /* Main.storyboard */; };
 		8685EAF8203E3BA30038FE64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8685EAF7203E3BA30038FE64 /* Assets.xcassets */; };
@@ -84,6 +88,9 @@
 		5308EBF788BBF81B34C026CF /* Pods-AppChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppChallengeUITests/Pods-AppChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6590D3B889D5D1E1279F6F84 /* Pods-AppChallenge-AppChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppChallenge-AppChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppChallenge-AppChallengeTests/Pods-AppChallenge-AppChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		71447D363F29A3A315A30E94 /* Pods_AppChallenge_AppChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppChallenge_AppChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8610E3CD2043954100231606 /* TableViewManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewManagerTests.swift; sourceTree = "<group>"; };
+		8614A15420438F8100FCB049 /* OnBoardingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingTests.swift; sourceTree = "<group>"; };
+		8614A1562043924200FCB049 /* OnBoardingControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingControllerTests.swift; sourceTree = "<group>"; };
 		864AA3742042FB8100840E62 /* ReviewAddressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewAddressCell.swift; sourceTree = "<group>"; };
 		864AA3762042FB9000840E62 /* ReviewRatingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRatingsCell.swift; sourceTree = "<group>"; };
 		864AA37A2042FBE000840E62 /* ReviewTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTextCell.swift; sourceTree = "<group>"; };
@@ -111,8 +118,9 @@
 		867AF7AA203F873B00F30818 /* ServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAPI.swift; sourceTree = "<group>"; };
 		867AF7AC203F99D400F30818 /* CairRepairTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CairRepairTests.swift; sourceTree = "<group>"; };
 		867AF7B1203FA5E300F30818 /* listing */ = {isa = PBXFileReference; explicitFileType = text.json; path = listing; sourceTree = "<group>"; };
-		867CA98920436DC7005889A4 /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
 		867CA98B204377B1005889A4 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
+		867CA98D20437F26005889A4 /* NetworkStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
+		867CA98F20437F33005889A4 /* Geoloc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geoloc.swift; sourceTree = "<group>"; };
 		8685EAED203E3BA30038FE64 /* AppChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8685EAF0203E3BA30038FE64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8685EAF5203E3BA30038FE64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -198,7 +206,6 @@
 			isa = PBXGroup;
 			children = (
 				8667C4F1204180BD00D8E8A1 /* CLLocationCoordinate2D+Helpers.swift */,
-				867CA98920436DC7005889A4 /* NetworkStatus.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -229,7 +236,9 @@
 		867AF7A9203F872A00F30818 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				867CA98D20437F26005889A4 /* NetworkStatus.swift */,
 				867AF7AA203F873B00F30818 /* ServiceAPI.swift */,
+				867CA98F20437F33005889A4 /* Geoloc.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -295,7 +304,9 @@
 				867AF7AC203F99D400F30818 /* CairRepairTests.swift */,
 				86EAB5112041ADA20078594C /* DetailPresenterTests.swift */,
 				864AA38920433EC000840E62 /* DetailControllerTests.swift */,
+				8614A1562043924200FCB049 /* OnBoardingControllerTests.swift */,
 				864AA38B204340C400840E62 /* JsonMock.swift */,
+				8610E3CD2043954100231606 /* TableViewManagerTests.swift */,
 			);
 			path = AppChallengeTests;
 			sourceTree = "<group>";
@@ -308,6 +319,7 @@
 				8685EB10203E3BA30038FE64 /* AppChallengeUITests.swift */,
 				86FD3B8620422DEF0074D58C /* ListingUITests.swift */,
 				864AA38D2043443700840E62 /* DetailUITests.swift */,
+				8614A15420438F8100FCB049 /* OnBoardingTests.swift */,
 			);
 			path = AppChallengeUITests;
 			sourceTree = "<group>";
@@ -751,17 +763,18 @@
 				867AF7AB203F873B00F30818 /* ServiceAPI.swift in Sources */,
 				867CA98C204377B1005889A4 /* OnboardingController.swift in Sources */,
 				864AA38220430EDB00840E62 /* TableViewManagerCache.swift in Sources */,
+				867CA98E20437F26005889A4 /* NetworkStatus.swift in Sources */,
 				86AAE0B1203E411200B11662 /* ListingController.swift in Sources */,
 				864AA3772042FB9000840E62 /* ReviewRatingsCell.swift in Sources */,
 				86AAE0BC203E422C00B11662 /* MainRouter.swift in Sources */,
 				8667C4F42041840300D8E8A1 /* DetailController.swift in Sources */,
 				86FD3B8520421D070074D58C /* CardCell.swift in Sources */,
-				867CA98A20436DC7005889A4 /* NetworkStatus.swift in Sources */,
 				86AAE0B3203E41B200B11662 /* PlacesInteractor.swift in Sources */,
 				864AA38120430EDB00840E62 /* TableViewManager.swift in Sources */,
 				8667C4FC2041A0B800D8E8A1 /* CardRepair.swift in Sources */,
 				86AAE0B9203E420D00B11662 /* CarRepairCard.swift in Sources */,
 				867AF7A4203F783600F30818 /* UIBaseViewController.swift in Sources */,
+				867CA99020437F33005889A4 /* Geoloc.swift in Sources */,
 				8667C4F820419EB700D8E8A1 /* Review.swift in Sources */,
 				864AA37B2042FBE000840E62 /* ReviewTextCell.swift in Sources */,
 				8685EAF1203E3BA30038FE64 /* AppDelegate.swift in Sources */,
@@ -780,6 +793,8 @@
 				867AF794203F638C00F30818 /* ListingPresenterTests.swift in Sources */,
 				864AA38A20433EC000840E62 /* DetailControllerTests.swift in Sources */,
 				864AA38C204340C400840E62 /* JsonMock.swift in Sources */,
+				8614A1572043924200FCB049 /* OnBoardingControllerTests.swift in Sources */,
+				8610E3CE2043954100231606 /* TableViewManagerTests.swift in Sources */,
 				867AF7AD203F99D400F30818 /* CairRepairTests.swift in Sources */,
 				86EAB5122041ADA20078594C /* DetailPresenterTests.swift in Sources */,
 				867AF790203F5B3800F30818 /* MainRouterTests.swift in Sources */,
@@ -791,6 +806,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8685EB11203E3BA30038FE64 /* AppChallengeUITests.swift in Sources */,
+				8614A15520438F8100FCB049 /* OnBoardingTests.swift in Sources */,
 				86FD3B8720422DEF0074D58C /* ListingUITests.swift in Sources */,
 				864AA38E2043443700840E62 /* DetailUITests.swift in Sources */,
 				86AAE0BE203E43F600B11662 /* SnapshotHelper.swift in Sources */,

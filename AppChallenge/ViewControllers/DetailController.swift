@@ -27,6 +27,11 @@ class DetailController: UIBaseViewController {
         return false
     }
     
+    /// setViewStatus when service no internet connection
+    func applyNetwork() {
+        setViewStatus(status: .network, animated: true)
+    }
+    
     /// setViewStatus when service conclude with errors
     func applyExceptionView() {
         setViewStatus(status: .exceptions, animated: true)

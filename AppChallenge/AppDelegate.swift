@@ -17,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        //UITesting
+        if ProcessInfo.processInfo.arguments.contains("UITesting") { Geoloc.shared.defaultLocation() }
+        
         preloadedExceptionsXib = UINib(nibName: "UIBaseViewController+exceptions", bundle: Bundle.main)
         preloadedLoadingXib = UINib(nibName: "UIBaseViewController+loading", bundle: Bundle.main)
         preloadedNetworkXib = UINib(nibName: "UIBaseViewController+network", bundle: Bundle.main)
@@ -31,7 +34,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func applicationDidBecomeActive(_ application: UIApplication) {
-        
+        Geoloc.shared.startLocationRequest()
+    }
+    
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        Geoloc.shared.stopLocationRequests()
+    }
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+        Geoloc.shared.stopLocationRequests()
     }
     
 }

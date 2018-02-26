@@ -35,4 +35,5 @@ class NetworkStatus {
 extension Notification.Name {
     static let notReachable = Notification.Name("notReachable")
     static let reachable = Notification.Name("reachable")
+    static let location = Notification.Name("location")
 }
