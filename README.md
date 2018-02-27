@@ -25,6 +25,10 @@ Implements unit tests.
 
 Implements UI tests.
 
+## Tests
+
+Implements unit tests with XCTests and Quic & Nimble
+
 ### Cocoapods Dependencies (Own Library)
 
 #### ConfigurationProvider
