@@ -72,6 +72,10 @@ class Geoloc: NSObject {
     }
     
     fileprivate func validateAndRequireLocation() {
+        
+        //UITesting
+        if ProcessInfo.processInfo.arguments.contains("UITestingOnboarding") { return }
+        
         let value = UserDefaults.standard.object(forKey: OnboardingController.onboardingComplete()) as? Bool
         if value ?? false { requireLocation() }
     }

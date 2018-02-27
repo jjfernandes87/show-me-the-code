@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LaunchApplication
 
 var mainRouter: MainRouter?
 
@@ -14,16 +15,11 @@ var mainRouter: MainRouter?
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var launchSequence = LaunchApp()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        //UITesting
-        if ProcessInfo.processInfo.arguments.contains("UITesting") { Geoloc.shared.defaultLocation() }
-        
-        // preload default UI
-        preloadedExceptionsXib = UINib(nibName: "UIBaseViewController+exceptions", bundle: Bundle.main)
-        preloadedLoadingXib = UINib(nibName: "UIBaseViewController+loading", bundle: Bundle.main)
-        preloadedNetworkXib = UINib(nibName: "UIBaseViewController+network", bundle: Bundle.main)
+        launchSequence.launchWithDelegate(delegate: self)
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
@@ -32,10 +28,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         mainRouter!.launch()
         
         return true
-    }
-    
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        Geoloc.shared.startLocationRequest()
     }
     
     func applicationDidEnterBackground(_ application: UIApplication) {
@@ -48,3 +40,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
 }
 
+extension AppDelegate: LaunchApplicationProtocol {
+    func didFinishLaunchSequence(application: LaunchApplication) {
+        Geoloc.shared.startLocationRequest()
+    }
+}
