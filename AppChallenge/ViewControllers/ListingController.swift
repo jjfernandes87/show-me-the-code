@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ListingController: UIBaseViewController {
+public class ListingController: UIBaseViewController {
 
     var presenter: ViewControllerProtocols!
     
     @IBOutlet weak var tableView: UITableView!
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         presenter.viewDidLoad()
     }
@@ -33,22 +33,22 @@ class ListingController: UIBaseViewController {
     }
     
     /// setViewStatus when service no internet connection
-    func applyNetwork() {
-        setViewStatus(status: .network, animated: true)
+    public func applyNetwork() {
+        self.setViewStatus(status: .network, animated: true)
     }
     
     /// setViewStatus when result service equal zero
-    func applyZeroResultView() {
+    public func applyZeroResultView() {
         setViewStatus(status: .missResult, animated: true)
     }
     
     /// setViewStatus when service conclude with errors
-    func applyExceptionView() {
+    public func applyExceptionView() {
         setViewStatus(status: .exceptions, animated: true)
     }
     
     /// setViewStatus when service conclude status code 200
-    func applyPresentingView() {
+    public func applyPresentingView() {
         tableView.reloadData()
         setViewStatus(status: .presenting, animated: true)
     }

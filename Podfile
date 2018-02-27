@@ -14,6 +14,8 @@ target 'AppChallenge' do
   pod 'UIColor_Hex_Swift'
   
   target 'AppChallengeTests' do
+      pod 'Nimble'
+      pod 'Quick'
   end
 
   target 'AppChallengeUITests' do
