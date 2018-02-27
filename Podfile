@@ -5,6 +5,7 @@ target 'AppChallenge' do
 
   # My Pods for AppChallenge
   pod 'ConfigurationProvider'
+  pod 'LaunchApplication'
   
   # External Pods for AppChallenge
   pod 'ModelMapper'

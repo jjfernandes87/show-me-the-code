@@ -68,6 +68,7 @@ class UIBaseViewController: UIViewController {
         super.viewWillAppear(animated)
         setupLoadingAndErrorView()
         tryDownloadingOnOccasion(occasion: .viewWillAppear)
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     func downloadData(viewOccasion: DownloadOccasion) -> Bool {

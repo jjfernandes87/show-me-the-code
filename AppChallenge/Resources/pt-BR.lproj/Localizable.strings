@@ -1,0 +1,11 @@
+/*
+ Localizable.strings
+ AppChallenge
+ 
+ Created by Julio Fernandes on 26/02/18.
+ Copyright © 2018 Julio Fernandes. All rights reserved.
+ */
+
+"Address" = "Endereço";
+"Phone" = "Telefone";
+"Vicinity" = "Vizinhança";

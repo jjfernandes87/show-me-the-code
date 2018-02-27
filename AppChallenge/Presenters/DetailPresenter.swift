@@ -52,13 +52,13 @@ extension DetailPresenter: ViewControllerProtocols {
     /// - Returns: lists of cells
     internal func loadCells(data: CarRepair) -> [AnyObject] {
         var rows = [AnyObject]()
-        rows.append(ReviewAddressCell(head: "Address", description: data.formattedAddress))
+        rows.append(ReviewAddressCell(head: "Address".localized(), description: data.formattedAddress))
         
         if let phone = data.internationalPhoneNumber {
-            rows.append(ReviewAddressCell(head: "Phone", description: phone))
+            rows.append(ReviewAddressCell(head: "Phone".localized(), description: phone))
         }
         
-        rows.append(ReviewAddressCell(head: "Vicinity", description: data.vicinity))
+        rows.append(ReviewAddressCell(head: "Vicinity".localized(), description: data.vicinity))
         rows.append(ReviewRatingsCell(card: data))
         
         for review in data.reviews {

@@ -36,6 +36,7 @@ class MainRouter: UINavigationController {
     convenience init(window: UIWindow?) {
         self.init()
         self.window = window
+        self.window?.backgroundColor = UIColor.white
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

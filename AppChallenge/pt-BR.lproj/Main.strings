@@ -1,0 +1,61 @@
+
+/* Class = "UILabel"; text = "Ratings & Reviews"; ObjectID = "2Gq-KA-HDX"; */
+"2Gq-KA-HDX.text" = "Avaliações & Comentários";
+
+/* Class = "UILabel"; text = "Julio Fernandes"; ObjectID = "4DK-tU-Bpu"; */
+"4DK-tU-Bpu.text" = "Julio Fernandes";
+
+/* Class = "UILabel"; text = "3.7"; ObjectID = "4z8-F1-aES"; */
+"4z8-F1-aES.text" = "3.7";
+
+/* Class = "UILabel"; text = "★★"; ObjectID = "Asj-YW-Fbw"; */
+"Asj-YW-Fbw.text" = "★★";
+
+/* Class = "UINavigationItem"; title = "Listing"; ObjectID = "Ax8-CS-OEy"; */
+"Ax8-CS-OEy.title" = "Lista";
+
+/* Class = "UILabel"; text = "Ratings & Reviews"; ObjectID = "FjE-Tm-Bo9"; */
+"FjE-Tm-Bo9.text" = "Avaliações & Comentários";
+
+/* Class = "UILabel"; text = "These guys did a fantastic job of repairing the damage to my front bumper for a very reasonable price. Friendly service too"; ObjectID = "HFm-hV-sPI"; */
+"HFm-hV-sPI.text" = "Esses caras fizeram um trabalho fantástico de reparar o dano no meu pára-choque dianteiro por um preço muito razoável. Serviço amigável também";
+
+/* Class = "UILabel"; text = "5.0"; ObjectID = "Hma-QV-gPb"; */
+"Hma-QV-gPb.text" = "5.0";
+
+/* Class = "UILabel"; text = "Itaesbra Mechanical Industry"; ObjectID = "JPV-2r-emC"; */
+"JPV-2r-emC.text" = "Itaesbra Mechanical Industry";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "PT8-MP-gd4"; */
+"PT8-MP-gd4.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Allow"; ObjectID = "VgW-8h-Jll"; */
+"VgW-8h-Jll.normalTitle" = "Permitir";
+
+/* Class = "UILabel"; text = "out of 5"; ObjectID = "WVQ-kC-Xg1"; */
+"WVQ-kC-Xg1.text" = "de 5";
+
+/* Class = "UILabel"; text = "★★★"; ObjectID = "bKG-cG-ro3"; */
+"bKG-cG-ro3.text" = "★★★";
+
+/* Class = "UILabel"; text = "★★★★★"; ObjectID = "bz1-Ih-P3t"; */
+"bz1-Ih-P3t.text" = "★★★★★";
+
+/* Class = "UILabel"; text = "★★★★"; ObjectID = "d4x-Or-BMS"; */
+"d4x-Or-BMS.text" = "★★★★";
+
+/* Class = "UILabel"; text = "We would like to get your location, to look for the car repair nearest"; ObjectID = "mon-dK-76i"; */
+"mon-dK-76i.text" = "Gostaríamos de obter a sua localização, para procurar a oficina mais próxima";
+
+/* Class = "UILabel"; text = "Estrada das Lágrimas, 3220 - Jardim Patente Novo, São Paulo"; ObjectID = "noZ-zH-Cei"; */
+"noZ-zH-Cei.text" = "Estrada das Lágrimas, 3220 - Jardim Patente Novo, São Paulo";
+
+/* Class = "UILabel"; text = "★★★★★"; ObjectID = "r9f-sN-HgG"; */
+"r9f-sN-HgG.text" = "★★★★★";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "rcR-lS-Yg9"; */
+"rcR-lS-Yg9.title" = " ";
+
+/* Class = "UILabel"; text = "★"; ObjectID = "tqO-68-KYJ"; */
+"tqO-68-KYJ.text" = "★";
+

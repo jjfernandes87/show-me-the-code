@@ -26,7 +26,7 @@ class DetailUITests: XCTestCase {
     func testDetail() {
         let detail = showDetail()
         XCTAssertTrue(detail.app.navigationBars["Moses & Sons Smash Repairs"].exists)
-        XCTAssertEqual(detail.tableQuery.cells.count, 6)
+        XCTAssertEqual(detail.tableQuery.cells.count, 8)
     }
     
     func testReviewAdrressCell() {
@@ -41,7 +41,7 @@ class DetailUITests: XCTestCase {
     
     func testReviewRatingsCell() {
         let detail = showDetail()
-        XCTAssertTrue(detail.tableQuery.staticTexts["5.0"].exists)
+        XCTAssertTrue(detail.tableQuery.staticTexts["4.0"].exists)
     }
     
     func testReviewTextCell() {

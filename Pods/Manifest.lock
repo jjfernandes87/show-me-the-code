@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (4.6.0)
   - ConfigurationProvider (0.0.10)
+  - LaunchApplication (0.0.2)
   - ModelMapper (7.4.1)
   - Nuke (6.1)
   - UIColor_Hex_Swift (4.0.1)
@@ -8,6 +9,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - ConfigurationProvider
+  - LaunchApplication
   - ModelMapper
   - Nuke
   - UIColor_Hex_Swift
@@ -15,10 +17,11 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   ConfigurationProvider: 0835ec4ad993e84e9f2f91b20caf302abc6a8543
+  LaunchApplication: 80accc5b81531c866db5b9822a965efb8dde4a07
   ModelMapper: e576b4e32007bf574d0f9e4f533d29c46d29f146
   Nuke: 0513c8d156bd9a2adb15db70622c3527f44542c5
   UIColor_Hex_Swift: c5ff88470499383b8fd85302d59344bb24ba9436
 
-PODFILE CHECKSUM: ee024522f799bdbef91644339f74bd57009c3dec
+PODFILE CHECKSUM: ba5296184b7047370b40d3fb22f579ead72baeac
 
 COCOAPODS: 1.4.0

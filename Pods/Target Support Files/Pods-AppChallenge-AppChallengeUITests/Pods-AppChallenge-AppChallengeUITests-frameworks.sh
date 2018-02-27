@@ -136,6 +136,7 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ConfigurationProvider/ConfigurationProvider.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/LaunchApplication/LaunchApplication.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ModelMapper/Mapper.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/UIColor_Hex_Swift/UIColor_Hex_Swift.framework"
@@ -143,6 +144,7 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ConfigurationProvider/ConfigurationProvider.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/LaunchApplication/LaunchApplication.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ModelMapper/Mapper.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/UIColor_Hex_Swift/UIColor_Hex_Swift.framework"
