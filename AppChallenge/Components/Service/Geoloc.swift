@@ -39,7 +39,7 @@ class Geoloc: NSObject {
     }
     
     func startLocationRequest() {
-        guard let locationManager = manager else { requireLocation(); return  }
+        guard let locationManager = manager else { validateAndRequireLocation(); return  }
         locationManager.startUpdatingLocation()
     }
     
@@ -69,6 +69,11 @@ class Geoloc: NSObject {
     func defaultLocation() {
         guard let lat = CLLocationDegrees(exactly: -23.5632103), let lng = CLLocationDegrees(exactly: -46.6542503) else { return }
         lastLocation = CLLocation(latitude: lat, longitude: lng)
+    }
+    
+    fileprivate func validateAndRequireLocation() {
+        let value = UserDefaults.standard.object(forKey: OnboardingController.onboardingComplete()) as? Bool
+        if value ?? false { requireLocation() }
     }
 }
 

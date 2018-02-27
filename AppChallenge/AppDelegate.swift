@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //UITesting
         if ProcessInfo.processInfo.arguments.contains("UITesting") { Geoloc.shared.defaultLocation() }
         
+        // preload default UI
         preloadedExceptionsXib = UINib(nibName: "UIBaseViewController+exceptions", bundle: Bundle.main)
         preloadedLoadingXib = UINib(nibName: "UIBaseViewController+loading", bundle: Bundle.main)
         preloadedNetworkXib = UINib(nibName: "UIBaseViewController+network", bundle: Bundle.main)

@@ -10,6 +10,8 @@ import UIKit
 
 class OnboardingController: UIBaseViewController {
     
+    class func onboardingComplete() -> String { return "onboardingComplete" }
+    
     @IBOutlet weak var message: UILabel!
     
     override func viewDidLoad() {
@@ -21,6 +23,12 @@ class OnboardingController: UIBaseViewController {
     }
     
     @IBAction func allow() {
+        onboardingComplete()
         Geoloc.shared.userLocationRequired()
+    }
+    
+    fileprivate func onboardingComplete() {
+        UserDefaults.standard.set(true, forKey: OnboardingController.onboardingComplete())
+        UserDefaults.standard.synchronize()
     }
 }
