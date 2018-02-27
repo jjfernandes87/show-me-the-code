@@ -8,13 +8,13 @@
 
 import UIKit
 
-class DetailController: UIBaseViewController {
+public class DetailController: UIBaseViewController {
     
     var presenter: ViewControllerProtocols!
     
     @IBOutlet weak var tableView: TableViewManager!
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         presenter.viewDidLoad()
     }
@@ -28,17 +28,17 @@ class DetailController: UIBaseViewController {
     }
     
     /// setViewStatus when service no internet connection
-    func applyNetwork() {
+    public func applyNetwork() {
         setViewStatus(status: .network, animated: true)
     }
     
     /// setViewStatus when service conclude with errors
-    func applyExceptionView() {
+    public func applyExceptionView() {
         setViewStatus(status: .exceptions, animated: true)
     }
     
     /// setViewStatus when service conclude status code 200
-    func applyPresentingView() {
+    public func applyPresentingView() {
         setViewStatus(status: .presenting, animated: true)
     }
 

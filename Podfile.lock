@@ -3,7 +3,9 @@ PODS:
   - ConfigurationProvider (0.0.10)
   - LaunchApplication (0.0.2)
   - ModelMapper (7.4.1)
+  - Nimble (7.0.3)
   - Nuke (6.1)
+  - Quick (1.2.0)
   - UIColor_Hex_Swift (4.0.1)
 
 DEPENDENCIES:
@@ -11,7 +13,9 @@ DEPENDENCIES:
   - ConfigurationProvider
   - LaunchApplication
   - ModelMapper
+  - Nimble
   - Nuke
+  - Quick
   - UIColor_Hex_Swift
 
 SPEC CHECKSUMS:
@@ -19,9 +23,11 @@ SPEC CHECKSUMS:
   ConfigurationProvider: 0835ec4ad993e84e9f2f91b20caf302abc6a8543
   LaunchApplication: 80accc5b81531c866db5b9822a965efb8dde4a07
   ModelMapper: e576b4e32007bf574d0f9e4f533d29c46d29f146
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   Nuke: 0513c8d156bd9a2adb15db70622c3527f44542c5
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
   UIColor_Hex_Swift: c5ff88470499383b8fd85302d59344bb24ba9436
 
-PODFILE CHECKSUM: ba5296184b7047370b40d3fb22f579ead72baeac
+PODFILE CHECKSUM: 0b8efae123c0963b8c8134291bc1ba6ce69fd701
 
 COCOAPODS: 1.4.0

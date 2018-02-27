@@ -29,7 +29,7 @@ enum UIBaseViewStatus: Int {
     case missResult
 }
 
-class UIBaseViewController: UIViewController {
+public class UIBaseViewController: UIViewController {
     
     let networkStatus = NetworkStatus.sharedInstance
     var viewStatus: UIBaseViewStatus?
@@ -47,7 +47,7 @@ class UIBaseViewController: UIViewController {
         NotificationCenter.default.removeObserver(self, name: .location, object: nil)
     }
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         setupLoadingAndErrorView()
         networkStatus.startNetworkReachabilityObserver()
@@ -59,12 +59,12 @@ class UIBaseViewController: UIViewController {
     
     @objc func receiveLocation() {}
     
-    override func viewDidAppear(_ animated: Bool) {
+    override public func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         tryDownloadingOnOccasion(occasion: .viewDidAppear)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupLoadingAndErrorView()
         tryDownloadingOnOccasion(occasion: .viewWillAppear)
@@ -161,8 +161,10 @@ extension UIBaseViewController {
         
         if status == .network {
             if let network = uiExceptionsNetworkView {
-                view.bringSubview(toFront: network)
-                network.alpha = 1.0
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                    self.view.bringSubview(toFront: network)
+                    network.alpha = 1.0
+                }
             }
         }
         

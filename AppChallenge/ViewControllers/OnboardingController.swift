@@ -8,13 +8,13 @@
 
 import UIKit
 
-class OnboardingController: UIBaseViewController {
+public class OnboardingController: UIBaseViewController {
     
     class func onboardingComplete() -> String { return "onboardingComplete" }
     
     @IBOutlet weak var message: UILabel!
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
     }
     
