@@ -7,9 +7,9 @@
 <body>
 <header><div class="row"><a href="index.html"><img src="logo.jpg" alt="Slather logo"></a></div></header><div class="row"><div id="reports">
 <h2 class="cov_title">
-<span>Coverage for "PlacesInteractor.swift" : </span><span class="cov_medium">82.35%</span>
+<span>Coverage for "PlacesInteractor.swift" : </span><span class="cov_low">44.74%</span>
 </h2>
-<h4 class="cov_subtitle">(14 of 17 relevant lines covered)</h4>
+<h4 class="cov_subtitle">(17 of 38 relevant lines covered)</h4>
 <h4 class="cov_filepath">AppChallenge/Interactors/PlacesInteractor.swift</h4>
 <table class="source_code">
 <tr class="never">
@@ -74,87 +74,87 @@
 </tr>
 <tr class="never">
 <td class="num">13</td>
-<td class="src"><pre><code class="objc"> </code></pre></td>
-<td class="coverage"></td>
-</tr>
-<tr class="never">
-<td class="num">14</td>
-<td class="src"><pre><code class="objc">    let key = "AIzaSyCxmDvGnuO7NXfGt-DiviuxOZOwYDgnqPc"</code></pre></td>
-<td class="coverage"></td>
-</tr>
-<tr class="never">
-<td class="num">15</td>
 <td class="src"><pre><code class="objc">    </code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">16</td>
+<td class="num">14</td>
 <td class="src"><pre><code class="objc">    /// Load listing in Google Maps Web service</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">17</td>
+<td class="num">15</td>
 <td class="src"><pre><code class="objc">    ///</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">18</td>
+<td class="num">16</td>
 <td class="src"><pre><code class="objc">    /// - Parameter completion: result data</code></pre></td>
 <td class="coverage"></td>
 </tr>
-<tr class="covered">
+<tr class="missed">
+<td class="num">17</td>
+<td class="src"><pre><code class="objc">    func loadListing(location: String, radius: Int, completion: @escaping ((Bool, String?, [CarRepairCard]?, Bool) -&gt; Void)) {</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">18</td>
+<td class="src"><pre><code class="objc">        </code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
 <td class="num">19</td>
-<td class="src"><pre><code class="objc">    func loadListing(completion: @escaping ((Bool, String?, [CarRepair]?) -&gt; Void)) {</code></pre></td>
-<td class="coverage">3x</td>
-</tr>
-<tr class="covered">
-<td class="num">20</td>
-<td class="src"><pre><code class="objc">        </code></pre></td>
-<td class="coverage">3x</td>
-</tr>
-<tr class="covered">
-<td class="num">21</td>
 <td class="src"><pre><code class="objc">        let url = pathURL(tag: "listing")</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">!</td>
 </tr>
-<tr class="covered">
-<td class="num">22</td>
-<td class="src"><pre><code class="objc">        let parameters : [String : Any]  = ["location" : "-33.8670,151.1957", "radius": 500, "types": "car_repair", "key": key]</code></pre></td>
-<td class="coverage">3x</td>
+<tr class="missed">
+<td class="num">20</td>
+<td class="src"><pre><code class="objc">        let parameters : [String : Any]  = ["location" : location, "radius": radius, "types": "car_repair", "key": apiKey()]</code></pre></td>
+<td class="coverage">!</td>
 </tr>
-<tr class="covered">
-<td class="num">23</td>
+<tr class="missed">
+<td class="num">21</td>
 <td class="src"><pre><code class="objc">        </code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">!</td>
 </tr>
-<tr class="covered">
-<td class="num">24</td>
+<tr class="missed">
+<td class="num">22</td>
 <td class="src"><pre><code class="objc">        let config = RequestConfig(url: url, method: .get, parameters: parameters)</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">!</td>
 </tr>
-<tr class="covered">
-<td class="num">25</td>
+<tr class="missed">
+<td class="num">23</td>
 <td class="src"><pre><code class="objc">        ServiceAPI.request(config: config, success: { (result) in</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">!</td>
 </tr>
-<tr class="covered">
+<tr class="missed">
+<td class="num">24</td>
+<td class="src"><pre><code class="objc">            guard let json = result, let response = CarRepairCollection.from(json) else {</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">25</td>
+<td class="src"><pre><code class="objc">                return completion(false, "Parse error", nil, false)</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
 <td class="num">26</td>
-<td class="src"><pre><code class="objc">            guard let json = result, let response = CarRepairCollection.from(json) else { return completion(false, "Parse error", nil) }</code></pre></td>
-<td class="coverage">3x</td>
+<td class="src"><pre><code class="objc">            }</code></pre></td>
+<td class="coverage">!</td>
 </tr>
-<tr class="covered">
+<tr class="missed">
 <td class="num">27</td>
-<td class="src"><pre><code class="objc">            completion(true, nil, response.collection)</code></pre></td>
-<td class="coverage">3x</td>
+<td class="src"><pre><code class="objc">            completion(true, nil, response.collection, false)</code></pre></td>
+<td class="coverage">!</td>
 </tr>
 <tr class="missed">
 <td class="num">28</td>
-<td class="src"><pre><code class="objc">        }) { (error, errorMessage) in</code></pre></td>
+<td class="src"><pre><code class="objc">        }) { (error, errorMessage, internet) in</code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="missed">
 <td class="num">29</td>
-<td class="src"><pre><code class="objc">            completion(false, errorMessage, nil)</code></pre></td>
+<td class="src"><pre><code class="objc">            completion(false, errorMessage, nil, internet)</code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="missed">
@@ -162,15 +162,15 @@
 <td class="src"><pre><code class="objc">        }</code></pre></td>
 <td class="coverage">!</td>
 </tr>
-<tr class="covered">
+<tr class="missed">
 <td class="num">31</td>
 <td class="src"><pre><code class="objc">        </code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">!</td>
 </tr>
-<tr class="covered">
+<tr class="missed">
 <td class="num">32</td>
 <td class="src"><pre><code class="objc">    }</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">!</td>
 </tr>
 <tr class="never">
 <td class="num">33</td>
@@ -179,7 +179,7 @@
 </tr>
 <tr class="never">
 <td class="num">34</td>
-<td class="src"><pre><code class="objc">    /// Get url by tag</code></pre></td>
+<td class="src"><pre><code class="objc">    /// Load detail in Google Maps Web service</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
@@ -189,36 +189,171 @@
 </tr>
 <tr class="never">
 <td class="num">36</td>
-<td class="src"><pre><code class="objc">    /// - Parameter tag: configuration.plist &gt; scheme &gt; endpoints &gt; tag</code></pre></td>
+<td class="src"><pre><code class="objc">    /// - Parameter completion: result data</code></pre></td>
 <td class="coverage"></td>
 </tr>
-<tr class="never">
+<tr class="covered">
 <td class="num">37</td>
-<td class="src"><pre><code class="objc">    /// - Returns: path type String</code></pre></td>
-<td class="coverage"></td>
+<td class="src"><pre><code class="objc">    func loadDetail(placeId: String, completion: @escaping ((Bool, String?, CarRepair?, Bool) -&gt; Void)) {</code></pre></td>
+<td class="coverage">19x</td>
 </tr>
 <tr class="covered">
 <td class="num">38</td>
-<td class="src"><pre><code class="objc">    fileprivate func pathURL(tag: String) -&gt; String {</code></pre></td>
-<td class="coverage">3x</td>
+<td class="src"><pre><code class="objc">        </code></pre></td>
+<td class="coverage">19x</td>
 </tr>
 <tr class="covered">
 <td class="num">39</td>
-<td class="src"><pre><code class="objc">        return URLConfigurationProvider.urlStringBy(tag: tag)!</code></pre></td>
-<td class="coverage">3x</td>
+<td class="src"><pre><code class="objc">        let url = pathURL(tag: "detail")</code></pre></td>
+<td class="coverage">19x</td>
 </tr>
 <tr class="covered">
 <td class="num">40</td>
+<td class="src"><pre><code class="objc">        let parameters : [String : Any]  = ["placeid" : placeId, "key": apiKey()]</code></pre></td>
+<td class="coverage">19x</td>
+</tr>
+<tr class="covered">
+<td class="num">41</td>
+<td class="src"><pre><code class="objc">        </code></pre></td>
+<td class="coverage">19x</td>
+</tr>
+<tr class="covered">
+<td class="num">42</td>
+<td class="src"><pre><code class="objc">        let config = RequestConfig(url: url, method: .get, parameters: parameters)</code></pre></td>
+<td class="coverage">19x</td>
+</tr>
+<tr class="covered">
+<td class="num">43</td>
+<td class="src"><pre><code class="objc">        ServiceAPI.request(config: config, success: { (result) in</code></pre></td>
+<td class="coverage">19x</td>
+</tr>
+<tr class="missed">
+<td class="num">44</td>
+<td class="src"><pre><code class="objc">            guard let json = result, let response = CarRepairDetail.from(json) else {</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">45</td>
+<td class="src"><pre><code class="objc">                return completion(false, "Parse error", nil, false)</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="covered">
+<td class="num">46</td>
+<td class="src"><pre><code class="objc">            }</code></pre></td>
+<td class="coverage">19x</td>
+</tr>
+<tr class="covered">
+<td class="num">47</td>
+<td class="src"><pre><code class="objc">            completion(true, nil, response.result, false)</code></pre></td>
+<td class="coverage">19x</td>
+</tr>
+<tr class="missed">
+<td class="num">48</td>
+<td class="src"><pre><code class="objc">        }) { (error, errorMessage, internet) in</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">49</td>
+<td class="src"><pre><code class="objc">            completion(false, errorMessage, nil, internet)</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">50</td>
+<td class="src"><pre><code class="objc">        }</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="covered">
+<td class="num">51</td>
+<td class="src"><pre><code class="objc">        </code></pre></td>
+<td class="coverage">19x</td>
+</tr>
+<tr class="covered">
+<td class="num">52</td>
 <td class="src"><pre><code class="objc">    }</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">19x</td>
 </tr>
 <tr class="never">
-<td class="num">41</td>
+<td class="num">53</td>
 <td class="src"><pre><code class="objc">    </code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">42</td>
+<td class="num">54</td>
+<td class="src"><pre><code class="objc">    /// Get url by tag</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">55</td>
+<td class="src"><pre><code class="objc">    ///</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">56</td>
+<td class="src"><pre><code class="objc">    /// - Parameter tag: configuration.plist &gt; scheme &gt; endpoints &gt; tag</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">57</td>
+<td class="src"><pre><code class="objc">    /// - Returns: path type String</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="covered">
+<td class="num">58</td>
+<td class="src"><pre><code class="objc">    fileprivate func pathURL(tag: String) -&gt; String {</code></pre></td>
+<td class="coverage">19x</td>
+</tr>
+<tr class="covered">
+<td class="num">59</td>
+<td class="src"><pre><code class="objc">        return URLConfigurationProvider.urlStringBy(tag: tag)!</code></pre></td>
+<td class="coverage">19x</td>
+</tr>
+<tr class="covered">
+<td class="num">60</td>
+<td class="src"><pre><code class="objc">    }</code></pre></td>
+<td class="coverage">19x</td>
+</tr>
+<tr class="never">
+<td class="num">61</td>
+<td class="src"><pre><code class="objc">    </code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">62</td>
+<td class="src"><pre><code class="objc">    /// get google api key</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">63</td>
+<td class="src"><pre><code class="objc">    ///</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">64</td>
+<td class="src"><pre><code class="objc">    /// - Returns: configuration.plist &gt; scheme &gt; googleAPIKEY</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="covered">
+<td class="num">65</td>
+<td class="src"><pre><code class="objc">    fileprivate func apiKey() -&gt; String {</code></pre></td>
+<td class="coverage">19x</td>
+</tr>
+<tr class="covered">
+<td class="num">66</td>
+<td class="src"><pre><code class="objc">        return ConfigurationProvider.shared().getBy(tag: "googleAPIKEY")!</code></pre></td>
+<td class="coverage">19x</td>
+</tr>
+<tr class="covered">
+<td class="num">67</td>
+<td class="src"><pre><code class="objc">    }</code></pre></td>
+<td class="coverage">19x</td>
+</tr>
+<tr class="never">
+<td class="num">68</td>
+<td class="src"><pre><code class="objc">    </code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">69</td>
 <td class="src"><pre><code class="objc">}</code></pre></td>
 <td class="coverage"></td>
 </tr>

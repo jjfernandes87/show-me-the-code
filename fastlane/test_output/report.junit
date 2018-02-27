@@ -1,31 +1,75 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuites name='AppChallengeUITests.xctest' tests='16' failures='0'>
-  <testsuite name='AppChallengeTests.AppChallengeTests' tests='2' failures='0'>
-    <testcase classname='AppChallengeTests.AppChallengeTests' name='testExample' time='0.001'/>
-    <testcase classname='AppChallengeTests.AppChallengeTests' name='testPerformanceExample' time='0.336'/>
-  </testsuite>
-  <testsuite name='AppChallengeTests.CairRepairTests' tests='2' failures='0'>
-    <testcase classname='AppChallengeTests.CairRepairTests' name='testCairRepair' time='0.005'/>
+<testsuites name='AppChallengeUITests.xctest' tests='48' failures='0'>
+  <testsuite name='AppChallengeTests.CairRepairTests' tests='5' failures='0'>
+    <testcase classname='AppChallengeTests.CairRepairTests' name='testCairRepairCard' time='0.004'/>
+    <testcase classname='AppChallengeTests.CairRepairTests' name='testCardRepair' time='0.001'/>
     <testcase classname='AppChallengeTests.CairRepairTests' name='testCarRepairCollection' time='0.001'/>
+    <testcase classname='AppChallengeTests.CairRepairTests' name='testCarRepairCollectionWithoutResult' time='0.000'/>
+    <testcase classname='AppChallengeTests.CairRepairTests' name='testReview' time='0.001'/>
+  </testsuite>
+  <testsuite name='AppChallengeTests.DetailControllerTests' tests='2' failures='0'>
+    <testcase classname='AppChallengeTests.DetailControllerTests' name='testApplyExceptionView' time='0.007'/>
+    <testcase classname='AppChallengeTests.DetailControllerTests' name='testApplyPresentingView' time='0.005'/>
+  </testsuite>
+  <testsuite name='AppChallengeTests.DetailPresenterTests' tests='5' failures='0'>
+    <testcase classname='AppChallengeTests.DetailPresenterTests' name='testCellsCount' time='0.001'/>
+    <testcase classname='AppChallengeTests.DetailPresenterTests' name='testDetailPresenterWithViewProtocol' time='0.001'/>
+    <testcase classname='AppChallengeTests.DetailPresenterTests' name='testDetailTitle' time='0.005'/>
+    <testcase classname='AppChallengeTests.DetailPresenterTests' name='testDetailWithoutTitle' time='0.004'/>
+    <testcase classname='AppChallengeTests.DetailPresenterTests' name='testReviewAddressCell' time='0.000'/>
   </testsuite>
   <testsuite name='AppChallengeTests.ListingControllerTests' tests='3' failures='0'>
-    <testcase classname='AppChallengeTests.ListingControllerTests' name='testApplyExceptionView' time='0.009'/>
-    <testcase classname='AppChallengeTests.ListingControllerTests' name='testApplyPresentingView' time='0.006'/>
-    <testcase classname='AppChallengeTests.ListingControllerTests' name='testApplyZeroResultView' time='0.056'/>
+    <testcase classname='AppChallengeTests.ListingControllerTests' name='testApplyExceptionView' time='0.010'/>
+    <testcase classname='AppChallengeTests.ListingControllerTests' name='testApplyPresentingView' time='0.008'/>
+    <testcase classname='AppChallengeTests.ListingControllerTests' name='testApplyZeroResultView' time='0.006'/>
   </testsuite>
-  <testsuite name='AppChallengeTests.ListingPresenterTests' tests='4' failures='0'>
-    <testcase classname='AppChallengeTests.ListingPresenterTests' name='testListingPresenterAssignedDataSource' time='0.006'/>
-    <testcase classname='AppChallengeTests.ListingPresenterTests' name='testListingPresenterNotAssignedDataSource' time='0.006'/>
-    <testcase classname='AppChallengeTests.ListingPresenterTests' name='testListingPresenterWithRouter' time='0.001'/>
+  <testsuite name='AppChallengeTests.ListingPresenterTests' tests='6' failures='0'>
+    <testcase classname='AppChallengeTests.ListingPresenterTests' name='testListingPresenterAssignedDataSource' time='0.050'/>
+    <testcase classname='AppChallengeTests.ListingPresenterTests' name='testListingPresenterNotAssignedDataSource' time='0.010'/>
+    <testcase classname='AppChallengeTests.ListingPresenterTests' name='testListingPresenterWithRouter' time='0.000'/>
     <testcase classname='AppChallengeTests.ListingPresenterTests' name='testListingPresenterWithViewProtocol' time='0.001'/>
+    <testcase classname='AppChallengeTests.ListingPresenterTests' name='testTableViewCell' time='0.010'/>
+    <testcase classname='AppChallengeTests.ListingPresenterTests' name='testTableViewCount' time='0.005'/>
   </testsuite>
   <testsuite name='AppChallengeTests.MainRouterTests' tests='2' failures='0'>
     <testcase classname='AppChallengeTests.MainRouterTests' name='testNumberOfViewControllers' time='0.001'/>
     <testcase classname='AppChallengeTests.MainRouterTests' name='testRootControllerType' time='0.001'/>
   </testsuite>
+  <testsuite name='AppChallengeTests.OnBoardingControllerTests' tests='1' failures='0'>
+    <testcase classname='AppChallengeTests.OnBoardingControllerTests' name='testOnBoarding' time='0.007'/>
+  </testsuite>
+  <testsuite name='AppChallengeTests.TableViewManagerTests' tests='15' failures='0'>
+    <testcase classname='AppChallengeTests.TableViewManagerTests' name='testCanInstantiateViewController' time='0.007'/>
+    <testcase classname='AppChallengeTests.TableViewManagerTests' name='testFindControllerAtIndexPathForMultipleMode' time='0.004'/>
+    <testcase classname='AppChallengeTests.TableViewManagerTests' name='testFindTableAtIndexPathForSimpleMode' time='0.004'/>
+    <testcase classname='AppChallengeTests.TableViewManagerTests' name='testIndexPathForCellTableMultipleMode' time='0.005'/>
+    <testcase classname='AppChallengeTests.TableViewManagerTests' name='testIndexPathForCellTableSimpleMode' time='0.004'/>
+    <testcase classname='AppChallengeTests.TableViewManagerTests' name='testIndexPathForNilCellControllerMultipleMode' time='0.004'/>
+    <testcase classname='AppChallengeTests.TableViewManagerTests' name='testIndexPathForNilCellTableSimpleMode' time='0.004'/>
+    <testcase classname='AppChallengeTests.TableViewManagerTests' name='testSetSectionAndRowsWithoutSection' time='0.004'/>
+    <testcase classname='AppChallengeTests.TableViewManagerTests' name='testShouldSetTableViewDataSource' time='0.004'/>
+    <testcase classname='AppChallengeTests.TableViewManagerTests' name='testShouldSetTableViewDelegate' time='0.004'/>
+    <testcase classname='AppChallengeTests.TableViewManagerTests' name='testTableViewManagerItemsCount' time='0.004'/>
+    <testcase classname='AppChallengeTests.TableViewManagerTests' name='testTableViewManagerMode' time='0.004'/>
+    <testcase classname='AppChallengeTests.TableViewManagerTests' name='testTableViewManagerModeMultiple' time='0.004'/>
+    <testcase classname='AppChallengeTests.TableViewManagerTests' name='testTableViewManagerNotNill' time='0.008'/>
+    <testcase classname='AppChallengeTests.TableViewManagerTests' name='testTableViewManagerSectionCount' time='0.004'/>
+  </testsuite>
   <testsuite name='AppChallengeUITests.AppChallengeUITests' tests='3' failures='0'>
-    <testcase classname='AppChallengeUITests.AppChallengeUITests' name='testDetail' time='7.357'/>
-    <testcase classname='AppChallengeUITests.AppChallengeUITests' name='testListing' time='7.261'/>
-    <testcase classname='AppChallengeUITests.AppChallengeUITests' name='testListingPushToDetail' time='5.579'/>
+    <testcase classname='AppChallengeUITests.AppChallengeUITests' name='testDetail' time='8.038'/>
+    <testcase classname='AppChallengeUITests.AppChallengeUITests' name='testListing' time='7.316'/>
+    <testcase classname='AppChallengeUITests.AppChallengeUITests' name='testListingPushToDetail' time='5.933'/>
+  </testsuite>
+  <testsuite name='AppChallengeUITests.DetailUITests' tests='4' failures='0'>
+    <testcase classname='AppChallengeUITests.DetailUITests' name='testDetail' time='5.983'/>
+    <testcase classname='AppChallengeUITests.DetailUITests' name='testReviewAdrressCell' time='6.094'/>
+    <testcase classname='AppChallengeUITests.DetailUITests' name='testReviewRatingsCell' time='6.028'/>
+    <testcase classname='AppChallengeUITests.DetailUITests' name='testReviewTextCell' time='6.012'/>
+  </testsuite>
+  <testsuite name='AppChallengeUITests.ListingUITests' tests='1' failures='0'>
+    <testcase classname='AppChallengeUITests.ListingUITests' name='testListing' time='5.199'/>
+  </testsuite>
+  <testsuite name='AppChallengeUITests.OnBoardingTests' tests='1' failures='0'>
+    <testcase classname='AppChallengeUITests.OnBoardingTests' name='testShowOnBoard' time='7.290'/>
   </testsuite>
 </testsuites>

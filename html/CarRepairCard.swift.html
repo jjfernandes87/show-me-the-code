@@ -1,16 +1,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
 <html>
 <head>
-<title>CarRepair.swift - Slather</title>
+<title>CarRepairCard.swift - Slather</title>
 <link href="slather.css" media="all" rel="stylesheet">
 </head>
 <body>
 <header><div class="row"><a href="index.html"><img src="logo.jpg" alt="Slather logo"></a></div></header><div class="row"><div id="reports">
 <h2 class="cov_title">
-<span>Coverage for "CarRepair.swift" : </span><span class="cov_high">88.24%</span>
+<span>Coverage for "CarRepairCard.swift" : </span><span class="cov_high">100.00%</span>
 </h2>
-<h4 class="cov_subtitle">(15 of 17 relevant lines covered)</h4>
-<h4 class="cov_filepath">AppChallenge/Entities/CarRepair.swift</h4>
+<h4 class="cov_subtitle">(12 of 12 relevant lines covered)</h4>
+<h4 class="cov_filepath">AppChallenge/Entities/CarRepairCard.swift</h4>
 <table class="source_code">
 <tr class="never">
 <td class="num">1</td>
@@ -19,7 +19,7 @@
 </tr>
 <tr class="never">
 <td class="num">2</td>
-<td class="src"><pre><code class="objc">//  CarRepair.swift</code></pre></td>
+<td class="src"><pre><code class="objc">//  CarRepairCard.swift</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
@@ -79,23 +79,23 @@
 </tr>
 <tr class="never">
 <td class="num">14</td>
-<td class="src"><pre><code class="objc">    let collection: [CarRepair]</code></pre></td>
+<td class="src"><pre><code class="objc">    let collection: [CarRepairCard]</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="covered">
 <td class="num">15</td>
 <td class="src"><pre><code class="objc">    init(map: Mapper) throws {</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">2x</td>
 </tr>
-<tr class="missed">
+<tr class="covered">
 <td class="num">16</td>
 <td class="src"><pre><code class="objc">        collection = map.optionalFrom("results") ?? []</code></pre></td>
-<td class="coverage">!</td>
+<td class="coverage">1x</td>
 </tr>
 <tr class="covered">
 <td class="num">17</td>
 <td class="src"><pre><code class="objc">    }</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="never">
 <td class="num">18</td>
@@ -109,7 +109,7 @@
 </tr>
 <tr class="never">
 <td class="num">20</td>
-<td class="src"><pre><code class="objc">struct CarRepair: Mappable {</code></pre></td>
+<td class="src"><pre><code class="objc">class CarRepairCard: Mappable {</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
@@ -139,7 +139,7 @@
 </tr>
 <tr class="never">
 <td class="num">26</td>
-<td class="src"><pre><code class="objc">    let rating: Int</code></pre></td>
+<td class="src"><pre><code class="objc">    let rating: Float?</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
@@ -159,83 +159,53 @@
 </tr>
 <tr class="covered">
 <td class="num">30</td>
-<td class="src"><pre><code class="objc">    init(map: Mapper) throws {</code></pre></td>
-<td class="coverage">3x</td>
+<td class="src"><pre><code class="objc">    required init(map: Mapper) throws {</code></pre></td>
+<td class="coverage">26x</td>
 </tr>
 <tr class="covered">
 <td class="num">31</td>
-<td class="src"><pre><code class="objc">        try icon = map.from("icon", transformation: extractURL)</code></pre></td>
-<td class="coverage">3x</td>
+<td class="src"><pre><code class="objc">        try icon = map.from("icon")</code></pre></td>
+<td class="coverage">26x</td>
 </tr>
 <tr class="covered">
 <td class="num">32</td>
 <td class="src"><pre><code class="objc">        try id = map.from("id")</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">26x</td>
 </tr>
 <tr class="covered">
 <td class="num">33</td>
 <td class="src"><pre><code class="objc">        try placeId = map.from("place_id")</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">26x</td>
 </tr>
 <tr class="covered">
 <td class="num">34</td>
 <td class="src"><pre><code class="objc">        try name = map.from("name")</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">26x</td>
 </tr>
 <tr class="covered">
 <td class="num">35</td>
-<td class="src"><pre><code class="objc">        try rating = map.from("rating")</code></pre></td>
-<td class="coverage">3x</td>
+<td class="src"><pre><code class="objc">        try vicinity = map.from("vicinity")</code></pre></td>
+<td class="coverage">26x</td>
 </tr>
 <tr class="covered">
 <td class="num">36</td>
-<td class="src"><pre><code class="objc">        try vicinity = map.from("vicinity")</code></pre></td>
-<td class="coverage">3x</td>
+<td class="src"><pre><code class="objc">        try location = map.from("geometry.location")</code></pre></td>
+<td class="coverage">26x</td>
 </tr>
 <tr class="covered">
 <td class="num">37</td>
-<td class="src"><pre><code class="objc">        try location = map.from("geometry.location")</code></pre></td>
-<td class="coverage">3x</td>
+<td class="src"><pre><code class="objc">        rating = map.optionalFrom("rating")</code></pre></td>
+<td class="coverage">26x</td>
 </tr>
 <tr class="covered">
 <td class="num">38</td>
 <td class="src"><pre><code class="objc">    }</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">26x</td>
 </tr>
 <tr class="never">
 <td class="num">39</td>
 <td class="src"><pre><code class="objc">}</code></pre></td>
 <td class="coverage"></td>
-</tr>
-<tr class="never">
-<td class="num">40</td>
-<td class="src"><pre><code class="objc"></code></pre></td>
-<td class="coverage"></td>
-</tr>
-<tr class="covered">
-<td class="num">41</td>
-<td class="src"><pre><code class="objc">func extractURL(object: Any?) throws -&gt; URL {</code></pre></td>
-<td class="coverage">3x</td>
-</tr>
-<tr class="covered">
-<td class="num">42</td>
-<td class="src"><pre><code class="objc">    guard let path = object as? String else { throw MapperError.convertibleError(value: object, type: String.self) }</code></pre></td>
-<td class="coverage">3x</td>
-</tr>
-<tr class="covered">
-<td class="num">43</td>
-<td class="src"><pre><code class="objc">    if let pathURL = URL(string: path) { return pathURL }</code></pre></td>
-<td class="coverage">3x</td>
-</tr>
-<tr class="missed">
-<td class="num">44</td>
-<td class="src"><pre><code class="objc">    throw MapperError.customError(field: nil, message: "Couldn't create a url")</code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="covered">
-<td class="num">45</td>
-<td class="src"><pre><code class="objc">}</code></pre></td>
-<td class="coverage">3x</td>
 </tr>
 </table>
 </div></div>
